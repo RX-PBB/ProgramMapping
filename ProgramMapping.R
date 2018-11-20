@@ -70,22 +70,26 @@ summarize_RXProgIDs<-function(DatabaseNames=NULL){
        statement<-paste("SELECT * FROM ProgInfo;",sep='')
        ProgInfo<-dbGetQuery(con,statement)
        
+       dbDisconnect(con)
+         
        Programs_Total<-nrow(ProgInfo)
        Programs_Unique<-nrow(ProgInfo[is.na(ProgInfo$RX_ProgID),])
        Programs_Mapped<-nrow(ProgInfo[!is.na(ProgInfo$RX_ProgID),])
+       Programs_Mapped_Unique<-length(unique(ProgInfo[(!is.na(ProgInfo$RX_ProgID)),'RX_ProgID']))
        
        
        row<-data.frame(OrgName=OrgInfo[OrgInfo$DatabaseName==DatabaseNames[i],'OrgName'],
                        Programs_Total=Programs_Total,
                        Programs_Unique=Programs_Unique,
-                       Programs_Mapped=Programs_Mapped)
+                       Programs_Mapped=Programs_Mapped,
+                       Programs_Mapped_Unique=Programs_Mapped_Unique)
        
        temp<-rbind(temp,row)
        
        ProgInfo_Master<-rbind(ProgInfo_Master,ProgInfo)
        print(paste0(DatabaseNames[i],": ",OrgInfo[OrgInfo$DatabaseName==DatabaseNames[i],'OrgName']))
        
-       dbDisconnect(con)
+     
       
     }
     
