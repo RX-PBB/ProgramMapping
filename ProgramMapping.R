@@ -19,12 +19,18 @@ DatabaseNames<-c("RX_EnglewoodCO","RX_LittletonCO", "RX_MoffatCountyCO","RX_Whea
 
 data<-summarize_RXProgIDs(DatabaseNames)
 
+head(data$RX_ProgInfo)
+data$RX_ProgInfo[data$RX_ProgInfo$RX_ProgID==100,]
+
+head(data$Org_Program_Data)
+
+
 write.csv(data$RX_ProgInfo,'RX_Proginfo.csv')
 write.csv(data$Org_Program_Data,'Org_Program_Data.csv')
 
 
 data$Org_Program_Data
-
+write.csv(RX_ProgInfo,'RX_Master.csv')
 #**********************************************
 #
 # FUNCTION: Summarrize Master Programs
