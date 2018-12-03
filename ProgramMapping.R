@@ -1,5 +1,9 @@
 library(RMySQL)
 library(reshape2)
+library(devtools)
+install_github('RX-PBB/PBBMikesGeneral',force=T)
+library(PBBMikesGeneral)
+install_github('RX-PBB/ProgramMapping',force=T)
 library(ProgramMapping)
 
 
@@ -27,11 +31,26 @@ data$Org_Program_Data
 
 
 #**********************************************************************
-# add_RXProgID()
+# edit_RXProgID()
 #**********************************************************************
 # Can use this function and example below to add a new program to our master list
 
 
+
+#**********************************************************************
+# edit_RXProgID()
+#**********************************************************************
+# Use this function to echo back your changes to the RX_ProgInfo table
+# Can specify an RX_ProgID or set to NULL to pull all
+
+# Get all programs store into dataframe titled RX_ProgInfo_All
+RX_ProgInfo_All<-getRXProgID_Info(RX_ProgID=NULL)
+
+# Get single programs store into dataframe titled RX_ProgInfo_Single
+RX_ProgInfo_All<-getRXProgID_Info(RX_ProgID=1)
+
+# Get subset of programs store into dataframe titled RX_ProgInfo_Subset
+RX_ProgInfo_All<-getRXProgID_Info(RX_ProgID=c(1,2,3))
 
 
 

@@ -1,0 +1,44 @@
+#' get_RXProgID_Info
+#'
+#' Update an RX master program by ID
+#' @param RX_ProgID The ID of the program info to get. Set to NULL to pull all programs. Provide a vector of indexes to pull a subset.
+#' @export
+#' @examples
+#' edit_RXProgID(RX_ProgID=1,ProgName='Updated ProgName')
+#' edit_RXProgID(RX_ProgID=1,ProgName='Updated ProgName',ItemMeta1='New user group')
+#' Need to specify the RX_ProgID and then reference a column for updating. You may specify any combinations of ItemMeta1, ServiceType, ProgName, or ProgDEscription for updating
+
+
+
+get_RXProgID_Info<-function(RX_ProgID){
+
+
+    db_host<-'ec2-52-11-250-69.us-west-2.compute.amazonaws.com'
+    db_name<-'RX_Admin'
+
+    con <- dbConnect(MySQL(),
+                       user="mtseman",
+                       password="cree1234",
+                       host=db_host,
+                       dbname=db_name)
+
+
+    if(!is.null(RX_ProgID)){
+
+      statement<-paste("SELECT * FROM RX_ProgInfo WHERE RX_ProgID IN ",create_IDstring(RX_ProgID),";",sep='')
+      df<-dbGetQuery(con,statement)
+    }
+
+    if(is.null(RX_ProgID)){
+
+      statement<-paste("SELECT * FROM RX_ProgInfo;",sep='')
+      df<-dbGetQuery(con,statement)
+    }
+
+
+    dbDisconnect(con)
+
+
+    return(df)
+
+}
