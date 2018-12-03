@@ -1,6 +1,6 @@
 #' edit_RXProgID
 #'
-#' Updte an RX master program by ID
+#' Update an RX master program by ID
 #' @param RX_ProgID The ID of the program to update
 #' @param ItemMeta1 User group aka where to file this program under
 #' @param ServiceType Typically Community or Governance.

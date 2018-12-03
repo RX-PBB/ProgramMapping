@@ -19,7 +19,7 @@ edit_RXProgID(RX_ProgID, ItemMeta1 = NULL, ServiceType = NULL,
 \item{ProgDescription}{The Program description}
 }
 \description{
-Updte an RX master program by ID
+Update an RX master program by ID
 }
 \examples{
 edit_RXProgID(RX_ProgID=1,ProgName='Updated ProgName')
