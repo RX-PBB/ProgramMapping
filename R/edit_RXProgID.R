@@ -73,10 +73,6 @@ edit_RXProgID<-function(RX_ProgID,	ItemMeta1=NULL,	ServiceType=NULL,	ProgName=NU
         }
 
 
-    }
-
-
-
 
     dbDisconnect(con)
 
