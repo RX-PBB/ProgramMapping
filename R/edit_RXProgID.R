@@ -26,7 +26,7 @@ edit_RXProgID<-function(RX_ProgID,	ItemMeta1=NULL,	ServiceType=NULL,	ProgName=NU
                        host=db_host,
                        dbname=db_name)
 
-    for (dataField in c('ItemMeta','ServiceType','ProgName','ProgDescription')){
+    for (dataField in c('ItemMeta1','ServiceType','ProgName','ProgDescription')){
 
         if (!is.null(dataField)){
 
