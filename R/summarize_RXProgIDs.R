@@ -1,6 +1,6 @@
 #' summarize_RXProgIDs
 #'
-#' Creates two summary dataframes. One
+#' Creates two summary dataframes.
 #' One is a summary by Program - how often each program is used
 #' The second a sumary by Org - how many mapped programs per org.
 #' @param DatabaseNames names of the PBB databases to summarrize, set to NULL for all databases. Will exclude test databases
