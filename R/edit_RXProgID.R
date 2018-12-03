@@ -28,7 +28,9 @@ edit_RXProgID<-function(RX_ProgID,	ItemMeta1=NULL,	ServiceType=NULL,	ProgName=NU
 
     if (!is.null(ItemMeta1)){
 
-      statement<-paste0("UPDATE RX_ProgInfo SET ItemMeta1 = '",ItemMeta1,"' WHERE CustomerID = ",RX_ProgID,";")
+      ItemMeta1<-db_clean(ItemMeta1)
+
+      statement<-paste0("UPDATE RX_ProgInfo SET ItemMeta1 = '",ItemMeta1,"' WHERE RX_ProgID = ",RX_ProgID,";")
       rs<-dbSendQuery(con,statement)
       dbClearResult(rs)
 
@@ -36,7 +38,9 @@ edit_RXProgID<-function(RX_ProgID,	ItemMeta1=NULL,	ServiceType=NULL,	ProgName=NU
 
     if (!is.null(ServiceType)){
 
-      statement<-paste0("UPDATE RX_ProgInfo SET ServiceType = '",ServiceType,"' WHERE CustomerID = ",RX_ProgID,";")
+      ServiceType<-db_clean(ServiceType)
+
+      statement<-paste0("UPDATE RX_ProgInfo SET ServiceType = '",ServiceType,"' WHERE RX_ProgID = ",RX_ProgID,";")
       rs<-dbSendQuery(con,statement)
       dbClearResult(rs)
 
@@ -44,7 +48,9 @@ edit_RXProgID<-function(RX_ProgID,	ItemMeta1=NULL,	ServiceType=NULL,	ProgName=NU
 
     if (!is.null(ProgName)){
 
-      statement<-paste0("UPDATE RX_ProgInfo SET ProgName = '",ProgName,"' WHERE CustomerID = ",RX_ProgID,";")
+      ProgName<-db_clean(ProgName)
+
+      statement<-paste0("UPDATE RX_ProgInfo SET ProgName = '",ProgName,"' WHERE RX_ProgID = ",RX_ProgID,";")
       rs<-dbSendQuery(con,statement)
       dbClearResult(rs)
 
@@ -52,7 +58,9 @@ edit_RXProgID<-function(RX_ProgID,	ItemMeta1=NULL,	ServiceType=NULL,	ProgName=NU
 
     if (!is.null(ProgDescription)){
 
-      statement<-paste0("UPDATE RX_ProgInfo SET ProgDescription = '",ProgDescription,"' WHERE CustomerID = ",RX_ProgID,";")
+      ProgDescription<-db_clean(ProgDescription)
+
+      statement<-paste0("UPDATE RX_ProgInfo SET ProgDescription = '",ProgDescription,"' WHERE RX_ProgID = ",RX_ProgID,";")
       rs<-dbSendQuery(con,statement)
       dbClearResult(rs)
 
