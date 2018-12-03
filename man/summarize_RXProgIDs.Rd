@@ -14,8 +14,3 @@ Creates two summary dataframes. One
 One is a summary by Program - how often each program is used
 The second a sumary by Org - how many mapped programs per org.
 }
-\examples{
-data<-summarize_RXProgIDs(DatabaseNames)
-write.csv(data$RX_ProgInfo,'RX_Proginfo.csv')
-write.csv(data$Org_Program_Data,'Org_Program_Data.csv')
-}

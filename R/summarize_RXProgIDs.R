@@ -6,12 +6,11 @@
 #' @param DatabaseNames names of the PBB databases to summarrize, set to NULL for all databases. Will exclude test databases
 #' @export
 #' @examples
+#' DatabaseNames<-c("RX_EnglewoodCO","RX_LittletonCO", "RX_MoffatCountyCO","RX_WheatRidgeCO")
 #' data<-summarize_RXProgIDs(DatabaseNames)
 #' write.csv(data$RX_ProgInfo,'RX_Proginfo.csv')
 #' write.csv(data$Org_Program_Data,'Org_Program_Data.csv')
-
-
-#If you don't specify any databases, it will pull all non test orgs
+#' If you don't specify any databases, it will pull all non test orgs
 
 
 summarize_RXProgIDs<-function(DatabaseNames=NULL){
