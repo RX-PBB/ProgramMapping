@@ -26,20 +26,53 @@ edit_RXProgID<-function(RX_ProgID,	ItemMeta1=NULL,	ServiceType=NULL,	ProgName=NU
                        host=db_host,
                        dbname=db_name)
 
-    for (dataField in c('ItemMeta1','ServiceType','ProgName','ProgDescription')){
 
-        if (!is.null(dataField)){
 
-          dataField<-trim(dataField)
-          dataField<-gsub("'","''",dataField)
+        if (!is.null(ItemMeta1)){
 
-          statement<-paste0("UPDATE RX_ProgInfo SET ",dataField," = '",dataField,"' WHERE RX_ProgID = ",RX_ProgID,";")
+          ItemMeta1<-trim(ItemMeta1)
+          ItemMeta1<-gsub("'","''",ItemMeta1)
+
+          statement<-paste0("UPDATE RX_ProgInfo SET ItemMeta1 = '",ItemMeta1,"' WHERE RX_ProgID = ",RX_ProgID,";")
           rs<-dbSendQuery(con,statement)
           dbClearResult(rs)
 
         }
 
-       print(dataField)
+        if (!is.null(ServiceType)){
+
+          ServiceType<-trim(ServiceType)
+          ServiceType<-gsub("'","''",ServiceType)
+
+          statement<-paste0("UPDATE RX_ProgInfo SET ServiceType = '",ServiceType,"' WHERE RX_ProgID = ",RX_ProgID,";")
+          rs<-dbSendQuery(con,statement)
+          dbClearResult(rs)
+
+        }
+
+        if (!is.null(ProgName)){
+
+          ProgName<-trim(ProgName)
+          ProgName<-gsub("'","''",ProgName)
+
+          statement<-paste0("UPDATE RX_ProgInfo SET ProgName = '",ProgName,"' WHERE RX_ProgID = ",RX_ProgID,";")
+          rs<-dbSendQuery(con,statement)
+          dbClearResult(rs)
+
+        }
+
+        if (!is.null(ProgDescription)){
+
+          ProgDescription<-trim(ProgDescription)
+          ProgDescription<-gsub("'","''",ProgDescription)
+
+          statement<-paste0("UPDATE RX_ProgInfo SET ProgDescription = '",ProgDescription,"' WHERE RX_ProgID = ",RX_ProgID,";")
+          rs<-dbSendQuery(con,statement)
+          dbClearResult(rs)
+
+        }
+
+
     }
 
 
