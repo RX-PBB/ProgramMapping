@@ -26,14 +26,14 @@ edit_RXProgID<-function(RX_ProgID,	ItemMeta1=NULL,	ServiceType=NULL,	ProgName=NU
                        host=db_host,
                        dbname=db_name)
 
-    for (dataField in c('ItemMeta','ProgName')){
+    for (dataField in c('ItemMeta','ServiceType','ProgName','ProgDescription')){
 
         if (!is.null(dataField)){
 
           dataField<-trim(dataField)
           dataField<-gsub("'","''",dataField)
 
-          statement<-paste0("UPDATE RX_ProgInfo SET ItemMeta1 = '",dataField,"' WHERE RX_ProgID = ",RX_ProgID,";")
+          statement<-paste0("UPDATE RX_ProgInfo SET ",dataField," = '",dataField,"' WHERE RX_ProgID = ",RX_ProgID,";")
           rs<-dbSendQuery(con,statement)
           dbClearResult(rs)
 
