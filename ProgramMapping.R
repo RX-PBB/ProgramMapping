@@ -33,7 +33,11 @@ data<-summarize_RXProgIDs(DatabaseNames)
 write.csv(data$RX_ProgInfo,'RX_Proginfo.csv')
 write.csv(data$Org_Program_Data,'Org_Program_Data.csv')
 
+#Top 10 used programs
+head(data$RX_ProgInfo[order(-data$RX_ProgInfo$ProgCounts),],10)
 
+#Top 10 Orgs for # of Programs Mapped
+head(data$Org_Program_Data[order(-data$Org_Program_Data$Programs_Mapped),],10)
 
 
 #**********************************************************************
@@ -75,8 +79,7 @@ edit_RXProgID(RX_ProgID=2,ProgName="Airport Access TEST")
 RX_ProgInfo_Single<-get_RXProgID_Info(RX_ProgID=2)
 
 #Change it Back!
-desc<-"Provides for the background checks  fingerprinting  and other related activities for tenant and employee badging and  airport  access"
-edit_RXProgID(RX_ProgID=2,ProgName="Airport Access",ItemMeta1="Airport",ServiceType="Community",ProgDescription = desc)
+edit_RXProgID(RX_ProgID=2,ProgName="Airport Access")
 
 #Check it!
 RX_ProgInfo_Single<-get_RXProgID_Info(RX_ProgID=2)
