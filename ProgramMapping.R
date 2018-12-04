@@ -103,13 +103,31 @@ edit_RXProgID(RX_ProgID=RX_ProgID,ProgName=Program_Name,ItemMeta1=User_Group,Ser
 # Can use this function and example below to add a new program to our master list
 
 #Example
+User_Group<-'Code Enforcement'
+Program_Name<-'Code Development'
+ServiceType<-'Community'
+Desc<-'Provides technical analysis of changes various international building codes and recommend amendments for adoption and implementation. (If we decide to make this not Building Dept specific, we can just remove the "international building codes" and say municipal codes?'
 
-User_Group<-''
-Program_Name<-'Please Provide'
-ServiceType<-NULL
-Desc<-NULL
+add_RXProgID(ItemMeta1 = User_Group,
+             ServiceType=ServiceType,
+             ProgName=Program_Name,
+             ProgDescription=Desc)
 
 
 
+User_Group<-'Code Enforcement'
+Program_Name<-'Code Adoption'
+ServiceType<-'Community'
+Desc<-'Includes public hearings regarding analysis of the impact of adopting code (or code changes). Vote to adopt code or code changes based on analysis from staff and input from public hearings.'
+
+add_RXProgID(ItemMeta1 = User_Group,
+             ServiceType=ServiceType,
+             ProgName=Program_Name,
+             ProgDescription=Desc)
 
 
+
+#See your new programs added
+RX_ProgInfo_All<-get_RXProgID_Info(RX_ProgID=NULL)
+#tail pulls last 6 rows of the table
+tail(RX_ProgInfo_All)
