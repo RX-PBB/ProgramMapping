@@ -1,6 +1,6 @@
 #' get_RXProgID_Info
 #'
-#' Update an RX master program by ID
+#' Echo back RX master list
 #' @param RX_ProgID The ID of the program info to get. Set to NULL to pull all programs. Provide a vector of indexes to pull a subset.
 #' @export
 #' @examples
