@@ -26,7 +26,9 @@ library(ProgramMapping)
 DatabaseNames<-NULL
 
 #Or select just a subset to summarrize
-DatabaseNames<-c("RX_EnglewoodCO","RX_LittletonCO", "RX_MoffatCountyCO","RX_WheatRidgeCO")
+DatabaseNames<-c("RX_EnglewoodCO","RX_LittletonCO", "RX_MoffatCountyCO","RX_WheatRidgeCO","RX_ClearCreekCountyCO")
+DatabaseNames<-c("RX_EnglewoodCO","RX_LittletonCO", "RX_MoffatCountyCO","RX_WheatRidgeCO","RX_ClearCreekCountyCO","")
+
 
 #Output the summary files
 data<-summarize_RXProgIDs(DatabaseNames)
@@ -50,7 +52,8 @@ head(data$Org_Program_Data[order(-data$Org_Program_Data$Programs_Mapped),],10)
 
 # Get all programs store into dataframe titled RX_ProgInfo_All
 RX_ProgInfo_All<-get_RXProgID_Info(RX_ProgID=NULL)
-
+tail(RX_ProgInfo_All)
+write.csv(RX_ProgInfo_All,"RX_ProgInfo.csv",row.names = F)
 # Get single programs store into dataframe titled RX_ProgInfo_Single
 RX_ProgInfo_Single<-get_RXProgID_Info(RX_ProgID=1)
 
@@ -83,15 +86,15 @@ edit_RXProgID(RX_ProgID=2,ProgName="Airport Access")
 
 #Check it!
 RX_ProgInfo_Single<-get_RXProgID_Info(RX_ProgID=2)
-
+df<-get_RXProgID_Info(RX_ProgID=2)
 
 #Can use the following to make changes.
 #MUST specify a ProgID
 #May set other fields to NULL if not updating
 
-RX_ProgID<-'Please Provide'
-User_Group<-'Please Provide'
-Program_Name<-'Please Provide'
+RX_ProgID<-2
+User_Group<- NULL
+Program_Name<-'Airport Access'
 ServiceType<-NULL
 Desc<-NULL
 
@@ -134,3 +137,6 @@ add_RXProgID(ItemMeta1 = User_Group,
 RX_ProgInfo_All<-get_RXProgID_Info(RX_ProgID=NULL)
 #tail pulls last 6 rows of the table
 tail(RX_ProgInfo_All)
+
+
+
