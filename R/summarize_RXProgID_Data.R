@@ -7,6 +7,7 @@
 #' @examples
 #' data<-summarize_RXProgID_Data(RXProgID=1,DatabaseNames)
 
+
 summarize_RXProgID_Data<-function(RXProgID,DatabaseNames=NULL){
 
     db_host<-'ec2-52-11-250-69.us-west-2.compute.amazonaws.com'
@@ -40,7 +41,7 @@ summarize_RXProgID_Data<-function(RXProgID,DatabaseNames=NULL){
 
 
     for (i in 1:length(DatabaseNames)){
-
+      #print(DatabaseNames[i])
       #Get ProgInfo for
       con <- dbConnect(MySQL(),
                        user="mtseman",
@@ -63,14 +64,16 @@ summarize_RXProgID_Data<-function(RXProgID,DatabaseNames=NULL){
        if (nrow(ProgInfo)>0){
 
          for(j in 1:nrow(ProgInfo)){
+           #print(j)
            ProgID<-ProgInfo[j,'ProgID']
            rxprogid<-ProgInfo[j,'RX_ProgID']
 
            statement<-paste("SELECT * FROM Alloc WHERE ProgID=",ProgID,";",sep='')
            Alloc<-dbGetQuery(con,statement)
-
-           ItemIDs<-unique(Alloc$ItemID)
-           if(length(ItemIDs)>0){
+           
+           if(nrow(Alloc)>0)(ItemIDs<-unique(Alloc$ItemID))else(ItemIDs<-create_empty_df(n.cols = 2,col.names = c('ItemID','TotalCost')))
+           
+           if(nrow(ItemIDs)>0){
              statement<-paste("SELECT * FROM ItemInfo WHERE ItemID IN",create_IDstring(ItemIDs)," AND CostModelID=",CostModelID,";",sep='')
              ItemInfo<-dbGetQuery(con,statement)
 
@@ -82,7 +85,7 @@ summarize_RXProgID_Data<-function(RXProgID,DatabaseNames=NULL){
              ItemInfo<-merge(ItemInfo,Alloc[c('ItemID','BudgetID','ProgID','PercentAppliedToProg')],by=c('ItemID','BudgetID'))
              ItemInfo[,'ProgCost']<-ItemInfo$TotalCost*ItemInfo$PercentAppliedToProg
              ItemInfo[,'FTE']<-ItemInfo$NumberOfItems*ItemInfo$PercentAppliedToProg
-           }
+           
 
            #Now loop over budgets and build the data frame
            for (k in 1:nrow(BudgetInfo)){
@@ -118,8 +121,9 @@ summarize_RXProgID_Data<-function(RXProgID,DatabaseNames=NULL){
 
              data<-rbind(data,row)
 
-           } #end loop over k budgets
-
+            } #end loop over k budgets
+           }# end if this program had any items
+           
          }} #End loop over Programs that matched RX_ProgID within an Org DatabaseName
 
        dbDisconnect(con)
@@ -128,7 +132,7 @@ summarize_RXProgID_Data<-function(RXProgID,DatabaseNames=NULL){
     } #End loop over database names
 
     data<-data[data$TotalCost>0,]
-    data<-data[order(data$Org,-data$BudgetYear,data$ProgName),]
+    if(!is.null(data))( data<-data[order(data$Org,-data$BudgetYear,data$ProgName),])
 
     return(data)
 }
