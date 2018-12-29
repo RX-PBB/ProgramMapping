@@ -10,7 +10,7 @@ get_RXProgID_Info(RX_ProgID)
 \item{RX_ProgID}{The ID of the program info to get. Set to NULL to pull all programs. Provide a vector of indexes to pull a subset.}
 }
 \description{
-Update an RX master program by ID
+Echo back RX master list
 }
 \examples{
 edit_RXProgID(RX_ProgID=1,ProgName='Updated ProgName')

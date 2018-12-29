@@ -3,4 +3,5 @@
 export(add_RXProgID)
 export(edit_RXProgID)
 export(get_RXProgID_Info)
+export(summarize_RXProgID_Data)
 export(summarize_RXProgIDs)

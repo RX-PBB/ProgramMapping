@@ -17,6 +17,8 @@ library(ProgramMapping)
 #
 #    summarize_RXProgIDs() - Summarize program mapping.
 #
+#    summarize_RXProgIDs_byOrg() - Summarize cost data of mapped programs
+#
 #*******************************************************************
 # RX_ProgInfo: Summary by Program - how often each program is used
 # Org_Program_Data: Summary by Org - how many mapped programs per org.
@@ -39,7 +41,19 @@ write.csv(data$Org_Program_Data,'Org_Program_Data.csv')
 head(data$RX_ProgInfo[order(-data$RX_ProgInfo$ProgCounts),],10)
 
 #Top 10 Orgs for # of Programs Mapped
-head(data$Org_Program_Data[order(-data$Org_Program_Data$Programs_Mapped),],10)
+head(data$Org_Program_Data[order(-data$Org_Program_Data$Programs_Mapped),],20)
+
+#Summarize all the mapped prgrams from longmont
+data<-RX_PrgID_data<-summarize_RXProgID_Data(RXProgID=NULL,DatabaseNames="RX_LongmontCO")
+
+#Summarize all cost data of RX_ProgID 209 for all orgs
+data<-RX_PrgID_data<-summarize_RXProgID_Data(RXProgID=209,DatabaseNames=NULL)
+
+data<-RX_PrgID_data<-summarize_RXProgID_Data(RXProgID=c(67,208,209),DatabaseNames=NULL)
+
+#Summarize all programs across all orgs
+data<-RX_PrgID_data<-summarize_RXProgID_Data(RXProgID=NULL,DatabaseNames=NULL)
+
 
 
 #**********************************************************************
