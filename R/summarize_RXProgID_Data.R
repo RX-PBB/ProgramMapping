@@ -71,9 +71,9 @@ summarize_RXProgID_Data<-function(RXProgID,DatabaseNames=NULL){
            statement<-paste("SELECT * FROM Alloc WHERE ProgID=",ProgID,";",sep='')
            Alloc<-dbGetQuery(con,statement)
            
-           if(nrow(Alloc)>0)(ItemIDs<-unique(Alloc$ItemID))else(ItemIDs<-create_empty_df(n.cols = 2,col.names = c('ItemID','TotalCost')))
-           
-           if(nrow(ItemIDs)>0){
+          
+           if(nrow(Alloc)>0){
+             ItemIDs<-unique(Alloc$ItemID)
              statement<-paste("SELECT * FROM ItemInfo WHERE ItemID IN",create_IDstring(ItemIDs)," AND CostModelID=",CostModelID,";",sep='')
              ItemInfo<-dbGetQuery(con,statement)
 
@@ -122,7 +122,7 @@ summarize_RXProgID_Data<-function(RXProgID,DatabaseNames=NULL){
              data<-rbind(data,row)
 
             } #end loop over k budgets
-           }# end if this program had any items
+           }# end if this program had any allocations
            
          }} #End loop over Programs that matched RX_ProgID within an Org DatabaseName
 
