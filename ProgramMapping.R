@@ -44,7 +44,7 @@ head(data$RX_ProgInfo[order(-data$RX_ProgInfo$ProgCounts),],10)
 head(data$Org_Program_Data[order(-data$Org_Program_Data$Programs_Mapped),],20)
 
 #Summarize all the mapped prgrams from longmont
-data<-RX_PrgID_data<-summarize_RXProgID_Data(RXProgID=NULL,DatabaseNames="RX_LongmontCO")
+data<-RX_PrgID_data<-summarize_RXProgID_Data(RXProgID=209,DatabaseNames="RX_BeaufortSC_1")
 
 #Summarize all cost data of RX_ProgID 209 for all orgs
 data<-RX_PrgID_data<-summarize_RXProgID_Data(RXProgID=209,DatabaseNames=NULL)
