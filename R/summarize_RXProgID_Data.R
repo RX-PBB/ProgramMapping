@@ -132,7 +132,7 @@ summarize_RXProgID_Data<-function(RXProgID,DatabaseNames=NULL){
     } #End loop over database names
 
     data<-data[data$TotalCost>0,]
-    if(!is.null(data))( data<-data[order(data$Org,-data$BudgetYear,data$ProgName),])
+    if(!is.null(data))( data<-data[order(data$Org,-data$BudgetYear,-data$TotalCost,data$ProgName),])
 
     return(data)
 }
