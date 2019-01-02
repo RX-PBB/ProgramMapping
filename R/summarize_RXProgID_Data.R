@@ -115,6 +115,7 @@ summarize_RXProgID_Data<-function(RXProgID,DatabaseNames=NULL){
                              BudgetName=BudgetInfo[k,'BudgetName'],
                              BudgetYear=as.numeric(BudgetInfo[k,'Year']),
                              Org=BudgetOrgInfo$OrgName,
+                             Pop=BudgetOrgInfo$Population,
                              DatabaseName=DatabaseNames[i],
                              Lat=BudgetOrgInfo$Latitude,
                              Long=BudgetOrgInfo$Longitude,stringsAsFactors = F)
