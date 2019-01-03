@@ -6,7 +6,7 @@ library(devtools)
 #Our custom Libraries:
 install_github('RX-PBB/PBBMikesGeneral',force=T)
 library(PBBMikesGeneral)
-install_github('RX-PBB/ProgramMapping',force=T)
+install_github('RX-PBB/ProgramMapping')
 library(ProgramMapping)
 
 
@@ -53,7 +53,7 @@ data<-RX_PrgID_data<-summarize_RXProgID_Data(RXProgID=c(67,208,209),DatabaseName
 
 #Summarize all programs across all orgs
 data<-RX_PrgID_data<-summarize_RXProgID_Data(RXProgID=NULL,DatabaseNames=NULL)
-
+write.csv(data,'data.csv',row.names = F)
 
 
 #**********************************************************************
