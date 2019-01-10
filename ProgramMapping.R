@@ -55,7 +55,33 @@ data<-RX_PrgID_data<-summarize_RXProgID_Data(RXProgID=c(67,208,209),DatabaseName
 data<-RX_PrgID_data<-summarize_RXProgID_Data(RXProgID=NULL,DatabaseNames=NULL)
 write.csv(data,'data.csv',row.names = F)
 
+#Loop over supplied keywords associated with the master programs and generate a summary
 
+keyfile<-read.csv('keywords.csv',header=T,colClasses = 'character')
+
+for ( i in 1: nrow(keyfile)){
+
+    key1<-keyfile[i,'key1']
+    key2<-keyfile[i,'key2']
+    key3<-keyfile[i,'key3']
+    
+    temp<-NULL
+    if(!is.na(key) & key!=""){
+      
+      #search this keyword or phrase
+      temp<-globalsearch(RXProgID = NULL,DatabaseNames = NULL,keyword=key)
+      
+      #get just one progid for each
+      temp[,'dupcheck']<-paste0(temp$DatabaseName,temp$ProgID)
+      temp<-temp[!duplicated(temp$dupcheck),]
+      
+      #organize columns included in summary
+      temp[,'RX_ProgID']<-keyfile[i,'RX_ProgID']
+      temp[,'RX_ProgDesc']<-keyfile[i,'ProgDescription']
+      temp[,'key']<-key
+      
+    }
+}
 #**********************************************************************
 #
 #    get_RXProgID_Info() - echo back the master list
