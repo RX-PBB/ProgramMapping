@@ -59,28 +59,52 @@ write.csv(data,'data.csv',row.names = F)
 
 keyfile<-read.csv('keywords.csv',header=T,colClasses = 'character')
 
-for ( i in 1: nrow(keyfile)){
+keyfile<-keyfile[1:26,]
 
+temp<-NULL
+for ( i in 1: nrow(keyfile)){
+print(paste0(i,"  ",nrow(temp)))
     key1<-keyfile[i,'key1']
     key2<-keyfile[i,'key2']
     key3<-keyfile[i,'key3']
     
-    temp<-NULL
-    if(!is.na(key) & key!=""){
-      
-      #search this keyword or phrase
-      temp<-globalsearch(RXProgID = NULL,DatabaseNames = NULL,keyword=key)
-      
-      #get just one progid for each
-      temp[,'dupcheck']<-paste0(temp$DatabaseName,temp$ProgID)
-      temp<-temp[!duplicated(temp$dupcheck),]
-      
-      #organize columns included in summary
-      temp[,'RX_ProgID']<-keyfile[i,'RX_ProgID']
-      temp[,'RX_ProgDesc']<-keyfile[i,'ProgDescription']
-      temp[,'key']<-key
-      
-    }
+    x1<-NULL
+    x2<-NULL
+    x3<-NULL
+   
+    x1<-keyword_search(key1)
+    x2<-keyword_search(key2)
+    x3<-keyword_search(key3)
+    
+    temp<-rbind(temp,x1,x2,x3)
+}
+
+write.csv(temp,'keyword_search_results.csv')
+keyword_search<-function(key){
+  
+  temp<-NULL
+ 
+  if(!is.na(key) & key!=""){
+    
+    #search this keyword or phrase
+    temp<-globalsearch(RXProgID = NULL,DatabaseNames = NULL,keyword=key)
+    if(is.null(temp))(return(NULL))
+    #get just one progid for each
+    temp[,'dupcheck']<-paste0(temp$DatabaseName,temp$ProgID)
+    temp<-temp[!duplicated(temp$dupcheck),]
+    temp<-temp[,!(colnames(temp) %in% c('dupcheck'))]
+    colnames(temp)[1]<-'Curr_RX_ProgID'
+    
+    #organize columns included in summary
+    temp[,'Key_RX_ProgID']<-keyfile[i,'RX_ProgID']
+    temp[,'RX_ProgDescription']<-keyfile[i,'ProgDescription']
+    temp[,'RX_ProgName']<-keyfile[i,'ProgName']
+    temp[,'key']<-key
+    
+    temp<-temp[c('key','Key_RX_ProgID','Curr_RX_ProgID','RX_ProgName','RX_ProgDescription','DatabaseName','Org','ProgID','ProgName','ProgDescription','Lat','Long','Pop')]
+    
+  }
+  return(temp)
 }
 #**********************************************************************
 #
