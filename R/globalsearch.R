@@ -71,10 +71,10 @@ globalsearch<-function(RXProgID,OrgProgID=NULL,DatabaseNames=NULL,keyword=NULL){
          }
       }
 
-      if(!is.null(Org_ProgID)){
+      if(!is.null(OrgProgID)){
 
            #Get all OrgProgIDs specified
-           statement<-paste("SELECT * FROM ProgInfo WHERE RX_ProgID IN",create_IDstring(RXProgID),";",sep='')
+           statement<-paste("SELECT * FROM ProgInfo WHERE RX_ProgID IN",create_IDstring(OrgProgID),";",sep='')
            ProgInfo<-dbGetQuery(con,statement)
       }
 
