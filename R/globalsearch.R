@@ -16,8 +16,8 @@ globalsearch<-function(RXProgID,OrgProgID=NULL,DatabaseNames=NULL,keyword=NULL){
     db_name<-'RX_Admin'
     data<-NULL
 
-    #Can pull data in two modes - Here if referencing the master list
-    if(!is.null(RXProgID)){
+    #Even if we are not pulling by RX_ProgIDs get this info
+    
         con <- dbConnect(MySQL(),
                            user="mtseman",
                            password="cree1234",
@@ -26,7 +26,8 @@ globalsearch<-function(RXProgID,OrgProgID=NULL,DatabaseNames=NULL,keyword=NULL){
 
            statement<-paste("SELECT * FROM OrgInfo;",sep='')
            OrgInfo<-dbGetQuery(con,statement)
-
+           
+     
            if(!is.null(RXProgID)){
              statement<-paste("SELECT * FROM RX_ProgInfo WHERE RX_ProgID IN",create_IDstring(RXProgID),";",sep='')
              RX_ProgInfo<-dbGetQuery(con,statement)
@@ -35,10 +36,12 @@ globalsearch<-function(RXProgID,OrgProgID=NULL,DatabaseNames=NULL,keyword=NULL){
              statement<-paste("SELECT * FROM RX_ProgInfo;",sep='')
              RX_ProgInfo<-dbGetQuery(con,statement)
              RXProgID<-RX_ProgInfo$RX_ProgID
-           }
-
+          
+        }
+           
+           
         dbDisconnect(con)
-    }
+   
 
     if(is.null(DatabaseNames)){
     DatabaseNames<-sort(unique(OrgInfo[OrgInfo$IsTestOrg==0,'DatabaseName']))
@@ -74,7 +77,7 @@ globalsearch<-function(RXProgID,OrgProgID=NULL,DatabaseNames=NULL,keyword=NULL){
       if(!is.null(OrgProgID)){
 
            #Get all OrgProgIDs specified
-           statement<-paste("SELECT * FROM ProgInfo WHERE RX_ProgID IN",create_IDstring(OrgProgID),";",sep='')
+           statement<-paste("SELECT * FROM ProgInfo WHERE ProgID IN",create_IDstring(OrgProgID),";",sep='')
            ProgInfo<-dbGetQuery(con,statement)
       }
 
