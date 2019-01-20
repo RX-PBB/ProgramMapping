@@ -10,7 +10,6 @@
 #' @examples
 #' data<-globalsearch(RXProgID=NULL,DatabaseNames=NULL,keyword='Fireworks')
 
-
 globalsearch<-function(RXProgID,OrgProgID=NULL,DatabaseNames=NULL,keyword=NULL,excludeZeroCost=T){
 
     db_host<-'ec2-52-11-250-69.us-west-2.compute.amazonaws.com'
@@ -163,9 +162,36 @@ globalsearch<-function(RXProgID,OrgProgID=NULL,DatabaseNames=NULL,keyword=NULL,e
                              Long=BudgetOrgInfo$Longitude,stringsAsFactors = F)
 
              data<-rbind(data,row)
-
+             
+                  
             } #end loop over k budgets
-           }# end if this program had any allocations
+           }else{
+             #INcldue programs we only have inventory on
+             if(excludeZeroCost==F){
+               BudgetOrgInfo<-OrgInfo[OrgInfo$DatabaseName==DatabaseNames[i],]
+               row<-data.frame(RX_ProgID=rxprogid,
+                               ProgID=ProgInfo[j,'ProgID'],
+                               RX_ProgName=RX_ProgInfo[RX_ProgInfo$RX_ProgID==rxprogid,"ProgName"][1],
+                               RX_ProgDescription=RX_ProgInfo[RX_ProgInfo$RX_ProgID==rxprogid,"ProgDescription"][1],
+                               TotalCost=0,
+                               FTE=0,
+                               ProgName=ProgInfo[j,'ProgName'],
+                               ProgDescription=ProgInfo[j,'ProgDescription'],
+                               Personnel=0,
+                               NonPersonnel=0,
+                               Revenue=0,
+                               BudgetName=BudgetInfo[1,'BudgetName'],
+                               BudgetYear=as.numeric(BudgetInfo[1,'Year']),
+                               Org=BudgetOrgInfo$OrgName,
+                               Pop=BudgetOrgInfo$Population,
+                               DatabaseName=DatabaseNames[i],
+                               Lat=BudgetOrgInfo$Latitude,
+                               Long=BudgetOrgInfo$Longitude,stringsAsFactors = F)
+               
+               data<-rbind(data,row)
+             }
+          
+          }# end if this program had any allocations
 
          }} #End loop over Programs that matched RX_ProgID within an Org DatabaseName
 
