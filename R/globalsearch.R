@@ -5,12 +5,13 @@
 #' @param OrgProgID Specifiy an Org ProgID not the master list ID
 #' @param DatabaseNames names of the PBB databases to summarrize, set to NULL for all databases. Will exclude test databases
 #' @param keyword keyword to search program names and descriptions for
+#' @param excludeZeroCost Should we exclude progrms that are zero cost.
 #' @export
 #' @examples
 #' data<-globalsearch(RXProgID=NULL,DatabaseNames=NULL,keyword='Fireworks')
 
 
-globalsearch<-function(RXProgID,OrgProgID=NULL,DatabaseNames=NULL,keyword=NULL){
+globalsearch<-function(RXProgID,OrgProgID=NULL,DatabaseNames=NULL,keyword=NULL,excludeZeroCost=T){
 
     db_host<-'ec2-52-11-250-69.us-west-2.compute.amazonaws.com'
     db_name<-'RX_Admin'
@@ -173,7 +174,9 @@ globalsearch<-function(RXProgID,OrgProgID=NULL,DatabaseNames=NULL,keyword=NULL){
 
     } #End loop over database names
 
-    data<-data[data$TotalCost>0,]
+    if(excludeZeroCost==T){
+          data<-data[data$TotalCost>0,]
+    }
     if(!is.null(data))( data<-data[order(data$Org,-data$BudgetYear,-data$TotalCost,data$ProgName),])
 
     return(data)
