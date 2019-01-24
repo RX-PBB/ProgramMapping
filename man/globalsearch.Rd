@@ -4,14 +4,19 @@
 \alias{globalsearch}
 \title{globalsearch}
 \usage{
-globalsearch(RXProgID, DatabaseNames = NULL, keyword = NULL)
+globalsearch(RXProgID, OrgProgID = NULL, DatabaseNames = NULL,
+  keyword = NULL, excludeZeroCost = T)
 }
 \arguments{
 \item{RXProgID}{names of the PBB databases to summarrize, set to NULL for all databases. Will exclude test databases}
 
+\item{OrgProgID}{Specifiy an Org ProgID not the master list ID}
+
 \item{DatabaseNames}{names of the PBB databases to summarrize, set to NULL for all databases. Will exclude test databases}
 
 \item{keyword}{keyword to search program names and descriptions for}
+
+\item{excludeZeroCost}{Should we exclude progrms that are zero cost.}
 }
 \description{
 This function is the same as summarize_RXProgID_Data, but with a keyword parameter. We could consolidate into one function, but what to call it.
