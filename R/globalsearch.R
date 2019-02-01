@@ -113,86 +113,87 @@ globalsearch<-function(RXProgID,OrgProgID=NULL,DatabaseNames=NULL,keyword=NULL,e
            Alloc<-dbGetQuery(con,statement)
 
 
-           if(nrow(Alloc)>0){
+        if(nrow(Alloc)>0){
              ItemIDs<-unique(Alloc$ItemID)
              statement<-paste("SELECT * FROM ItemInfo WHERE ItemID IN",create_IDstring(ItemIDs)," AND CostModelID=",CostModelID,";",sep='')
              ItemInfo<-dbGetQuery(con,statement)
 
              AcctIDs<-unique(ItemInfo$AcctID)
-             statement<-paste("SELECT * FROM AcctInfo WHERE AcctID IN",create_IDstring(AcctIDs),";",sep='')
+             statement<-paste("SELECT * FROM AcctInfo WHERE AcctID IN ",create_IDstring(AcctIDs),";",sep='')
              AcctInfo<-dbGetQuery(con,statement)
-
-             ItemInfo<-merge(ItemInfo,AcctInfo[c('AcctType','ObjType','AcctID')],by='AcctID')
-             ItemInfo<-merge(ItemInfo,Alloc[c('ItemID','BudgetID','ProgID','PercentAppliedToProg')],by=c('ItemID','BudgetID'))
-             ItemInfo[,'ProgCost']<-ItemInfo$TotalCost*ItemInfo$PercentAppliedToProg
-             ItemInfo[,'FTE']<-ItemInfo$NumberOfItems*ItemInfo$PercentAppliedToProg
-
-
-           #Now loop over budgets and build the data frame
-           for (k in 1:nrow(BudgetInfo)){
-             BudgetID<-BudgetInfo[k,'BudgetID']
-             BudgetItemInfo<-ItemInfo[ItemInfo$BudgetID==BudgetID,]
-             TotalCost<-sum(BudgetItemInfo[BudgetItemInfo$AcctType=='Expense','ProgCost'],na.rm = T)
-
-             Personnel<-sum(BudgetItemInfo[BudgetItemInfo$AcctType=='Expense' & BudgetItemInfo$ObjType=='Personnel','ProgCost'],na.rm = T)
-             FTE<-sum(BudgetItemInfo[BudgetItemInfo$AcctType=='Expense' & BudgetItemInfo$ObjType=='Personnel','FTE'],na.rm = T)
-
-             NonPersonnel<-sum(BudgetItemInfo[BudgetItemInfo$AcctType=='Expense' & BudgetItemInfo$ObjType=='NonPersonnel','ProgCost'],na.rm = T)
-             Revenue<-sum(BudgetItemInfo[BudgetItemInfo$AcctType=='Revenue','ProgCost'],na.rm = T)
-
-             BudgetOrgInfo<-OrgInfo[OrgInfo$DatabaseName==DatabaseNames[i],]
-
-             row<-data.frame(RX_ProgID=rxprogid,
-                             ProgID=ProgInfo[j,'ProgID'],
-                             RX_ProgName=RX_ProgInfo[RX_ProgInfo$RX_ProgID==rxprogid,"ProgName"][1],
-                             RX_ProgDescription=RX_ProgInfo[RX_ProgInfo$RX_ProgID==rxprogid,"ProgDescription"][1],
-                             TotalCost=TotalCost,
-                             FTE=FTE,
-                             ProgName=ProgInfo[j,'ProgName'],
-                             ProgDescription=ProgInfo[j,'ProgDescription'],
-                             Personnel=Personnel,
-                             NonPersonnel=NonPersonnel,
-                             Revenue=Revenue,
-                             BudgetName=BudgetInfo[k,'BudgetName'],
-                             BudgetYear=as.numeric(BudgetInfo[k,'Year']),
-                             Org=BudgetOrgInfo$OrgName,
-                             Pop=BudgetOrgInfo$Population,
-                             DatabaseName=DatabaseNames[i],
-                             Lat=BudgetOrgInfo$Latitude,
-                             Long=BudgetOrgInfo$Longitude,stringsAsFactors = F)
-
-             data<-rbind(data,row)
-             
-                  
-            } #end loop over k budgets
-           }else{
-             #INcldue programs we only have inventory on
-             if(excludeZeroCost==F){
+          
+          if(nrow(AcctInfo)!=0){
+               ItemInfo<-merge(ItemInfo,AcctInfo[c('AcctType','ObjType','AcctID')],by='AcctID')
+               ItemInfo<-merge(ItemInfo,Alloc[c('ItemID','BudgetID','ProgID','PercentAppliedToProg')],by=c('ItemID','BudgetID'))
+               ItemInfo[,'ProgCost']<-ItemInfo$TotalCost*ItemInfo$PercentAppliedToProg
+               ItemInfo[,'FTE']<-ItemInfo$NumberOfItems*ItemInfo$PercentAppliedToProg
+  
+  
+             #Now loop over budgets and build the data frame
+             for (k in 1:nrow(BudgetInfo)){
+               BudgetID<-BudgetInfo[k,'BudgetID']
+               BudgetItemInfo<-ItemInfo[ItemInfo$BudgetID==BudgetID,]
+               TotalCost<-sum(BudgetItemInfo[BudgetItemInfo$AcctType=='Expense','ProgCost'],na.rm = T)
+  
+               Personnel<-sum(BudgetItemInfo[BudgetItemInfo$AcctType=='Expense' & BudgetItemInfo$ObjType=='Personnel','ProgCost'],na.rm = T)
+               FTE<-sum(BudgetItemInfo[BudgetItemInfo$AcctType=='Expense' & BudgetItemInfo$ObjType=='Personnel','FTE'],na.rm = T)
+  
+               NonPersonnel<-sum(BudgetItemInfo[BudgetItemInfo$AcctType=='Expense' & BudgetItemInfo$ObjType=='NonPersonnel','ProgCost'],na.rm = T)
+               Revenue<-sum(BudgetItemInfo[BudgetItemInfo$AcctType=='Revenue','ProgCost'],na.rm = T)
+  
                BudgetOrgInfo<-OrgInfo[OrgInfo$DatabaseName==DatabaseNames[i],]
+  
                row<-data.frame(RX_ProgID=rxprogid,
                                ProgID=ProgInfo[j,'ProgID'],
                                RX_ProgName=RX_ProgInfo[RX_ProgInfo$RX_ProgID==rxprogid,"ProgName"][1],
                                RX_ProgDescription=RX_ProgInfo[RX_ProgInfo$RX_ProgID==rxprogid,"ProgDescription"][1],
-                               TotalCost=0,
-                               FTE=0,
+                               TotalCost=TotalCost,
+                               FTE=FTE,
                                ProgName=ProgInfo[j,'ProgName'],
                                ProgDescription=ProgInfo[j,'ProgDescription'],
-                               Personnel=0,
-                               NonPersonnel=0,
-                               Revenue=0,
-                               BudgetName=BudgetInfo[1,'BudgetName'],
-                               BudgetYear=as.numeric(BudgetInfo[1,'Year']),
+                               Personnel=Personnel,
+                               NonPersonnel=NonPersonnel,
+                               Revenue=Revenue,
+                               BudgetName=BudgetInfo[k,'BudgetName'],
+                               BudgetYear=as.numeric(BudgetInfo[k,'Year']),
                                Org=BudgetOrgInfo$OrgName,
                                Pop=BudgetOrgInfo$Population,
                                DatabaseName=DatabaseNames[i],
                                Lat=BudgetOrgInfo$Latitude,
                                Long=BudgetOrgInfo$Longitude,stringsAsFactors = F)
-               
+  
                data<-rbind(data,row)
-             }
-          
+               
+                    
+              } #end loop over k budgets
+             }else{
+               #INcldue programs we only have inventory on
+               if(excludeZeroCost==F){
+                 BudgetOrgInfo<-OrgInfo[OrgInfo$DatabaseName==DatabaseNames[i],]
+                 row<-data.frame(RX_ProgID=rxprogid,
+                                 ProgID=ProgInfo[j,'ProgID'],
+                                 RX_ProgName=RX_ProgInfo[RX_ProgInfo$RX_ProgID==rxprogid,"ProgName"][1],
+                                 RX_ProgDescription=RX_ProgInfo[RX_ProgInfo$RX_ProgID==rxprogid,"ProgDescription"][1],
+                                 TotalCost=0,
+                                 FTE=0,
+                                 ProgName=ProgInfo[j,'ProgName'],
+                                 ProgDescription=ProgInfo[j,'ProgDescription'],
+                                 Personnel=0,
+                                 NonPersonnel=0,
+                                 Revenue=0,
+                                 BudgetName=BudgetInfo[1,'BudgetName'],
+                                 BudgetYear=as.numeric(BudgetInfo[1,'Year']),
+                                 Org=BudgetOrgInfo$OrgName,
+                                 Pop=BudgetOrgInfo$Population,
+                                 DatabaseName=DatabaseNames[i],
+                                 Lat=BudgetOrgInfo$Latitude,
+                                 Long=BudgetOrgInfo$Longitude,stringsAsFactors = F)
+                 
+                 data<-rbind(data,row)
+               }
+            
+            }# Had AcctInfo
           }# end if this program had any allocations
-
          }} #End loop over Programs that matched RX_ProgID within an Org DatabaseName
 
        dbDisconnect(con)
