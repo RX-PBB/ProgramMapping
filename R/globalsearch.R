@@ -75,7 +75,6 @@ globalsearch<-function(RXProgID,OrgProgID=NULL,DatabaseNames=NULL,keyword=NULL,e
       }
 
       if(!is.null(OrgProgID)){
-
            #Get all OrgProgIDs specified
            statement<-paste("SELECT * FROM ProgInfo WHERE ProgID IN",create_IDstring(OrgProgID),";",sep='')
            ProgInfo<-dbGetQuery(con,statement)
@@ -103,7 +102,7 @@ globalsearch<-function(RXProgID,OrgProgID=NULL,DatabaseNames=NULL,keyword=NULL,e
 
        #Calculate Program Cost
        if (nrow(ProgInfo)>0){
-
+         
          for(j in 1:nrow(ProgInfo)){
            #print(j)
            ProgID<-ProgInfo[j,'ProgID']
@@ -166,8 +165,9 @@ globalsearch<-function(RXProgID,OrgProgID=NULL,DatabaseNames=NULL,keyword=NULL,e
                
                     
               } #end loop over k budgets
-             }else{
+             }}else{
                #INcldue programs we only have inventory on
+              
                if(excludeZeroCost==F){
                  BudgetOrgInfo<-OrgInfo[OrgInfo$DatabaseName==DatabaseNames[i],]
                  row<-data.frame(RX_ProgID=rxprogid,
@@ -192,9 +192,9 @@ globalsearch<-function(RXProgID,OrgProgID=NULL,DatabaseNames=NULL,keyword=NULL,e
                  data<-rbind(data,row)
                }
             
-            }# Had AcctInfo
-          }# end if this program had any allocations
-         }} #End loop over Programs that matched RX_ProgID within an Org DatabaseName
+            }# end else if had allocations
+          }}# end loop over programs
+        
 
        dbDisconnect(con)
 
