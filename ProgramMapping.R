@@ -59,8 +59,9 @@ write.csv(data,'data.csv',row.names = F)
 
 keyfile<-read.csv('keywords.csv',header=T,colClasses = 'character')
 
-keyfile<-keyfile[1:26,]
+#keyfile<-keyfile[1:26,]
 
+start.time<-Sys.time()
 temp<-NULL
 for ( i in 1: nrow(keyfile)){
 print(paste0(i,"  ",nrow(temp)))
@@ -79,7 +80,8 @@ print(paste0(i,"  ",nrow(temp)))
     temp<-rbind(temp,x1,x2,x3)
 }
 
-
+stop.time<-Sys.time()
+stop.time-start.time
 
 write.csv(temp,'keyword_search_results.csv')
 keyword_search<-function(key){
