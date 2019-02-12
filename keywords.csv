@@ -40,15 +40,15 @@ RX_ProgID,ItemMeta1,ServiceType,ProgName,key1,key2,key3,ProgDescription,ProgCoun
 39,Assessor OR Appraiser,Community,Assessor Maps,assessor maps,,,Transmission of mapping changes to Geographic Information Systems  GIS   and the review and edit of those changes,3
 40,Assessor OR Appraiser,Community,Certification of Values,certification of values,assessment of value,,The  Assessor  reports value and revenue information to each taxing entity for property within its boundary,4
 41,Assessor OR Appraiser,Community,Customer Inquires and Assistance,,,,Assist customers via telephone  computer or walk ins,5
-42,Assessor OR Appraiser,Community,Exemptions,,,,Maintain records of exemptions and valuations,3
-43,Assessor OR Appraiser,Community,Mapping Information Database Maintenance,,,,Maintain and input mapping information and parcel changes,4
+42,Assessor OR Appraiser,Community,Exemptions,exemption,,,Maintain records of exemptions and valuations,3
+43,Assessor OR Appraiser,Community,Mapping Information Database Maintenance,mapping,parcel,,Maintain and input mapping information and parcel changes,4
 44,Assessor OR Appraiser,Community,Payment Collection & Processing,,,,Accept and process  payments made via the cashier s desk and reconcile cash drawers,2
-45,Assessor OR Appraiser,Community,Personal Property Valuation,,,,Creation or deletion of personal property accounts  and the confirmation of those values using various analytical methods,3
+45,Assessor OR Appraiser,Community,Personal Property Valuation,personal property,,,Creation or deletion of personal property accounts  and the confirmation of those values using various analytical methods,3
 46,Assessor OR Appraiser,Community,Property Valuation,property valuation,,,Data collection and property inspections to facilitate annual recalibration of market and regulated assessment values,9
 47,Assessor OR Appraiser,Community,Property Appraisals,,,,Value property in the using criteria stipulated by statute  Analyze sales data from the sales confirmation process,6
 48,Assessor OR Appraiser,Community,Sales Confirmation,,,,Inspect all sales and verify property information,4
 49,Assessor OR Appraiser,Community,Tax Roll Preparation and Certification,,,,Apply mil levy and fee percentages  and balance  tax roll certification,2
-50,Assessor OR Appraiser,Community,Website Maintenance,,,,Moves Adds Changes for website,3
+50,Assessor OR Appraiser,Community,Website Maintenance,assessor website,,,Moves Adds Changes for website,3
 51,Assessor OR Appraiser,Community,Property Record Maintenance,,,,Maintain property records database,3
 52,Assessor OR Appraiser,Community,Public Records Research Assistance,,,,Research ownership  assist realtors  attorneys and general public in determining land ownership,2
 53,Assessor OR Appraiser,Community,Real Estate Document Processing,,,,Check documents for errors  receive proper filing fees,3
@@ -58,174 +58,174 @@ RX_ProgID,ItemMeta1,ServiceType,ProgName,key1,key2,key3,ProgDescription,ProgCoun
 57,Assessor OR Appraiser,Community,Lien Processing,,,,Filing personal property  federal  state  motor vehicle and medical liens,2
 58,Assessor OR Appraiser,Community,Data Requests,,,,Fill requests made by citizens  customers  consultants  engineers  surveyors  community groups  other government agencies,3
 59,City Clerk,Community,City Archive,,,,Identifying  preserving  and making available records of enduring value,3
-60,City Clerk,Community,Business Registrations and Licenses,,,,Process registrations for businesses and business licenses in accordance with established laws and policies,8
+60,City Clerk,Community,Business Registrations and Licenses,business license,business licensing,,Process registrations for businesses and business licenses in accordance with established laws and policies,8
 61,City Clerk,Community,Election Administration,election,,,Administer municipal elections and conduct them in and ethical manner in accordance with the law,9
 62,City Clerk,Community,Liquor License Issuance,liquor license,liquor license insurance,,Process liquor licenses in accordance with established laws and policies,11
-63,City Clerk,Community,Solicitation Permits,,,,Process solicitation permits in accordance with established laws and policies,2
-64,City Clerk,Governance,Agenda Management,,,,Manage the agenda creation and distribution process to ensure that items are properly submitted to the Governing Body for review and approval,6
+63,City Clerk,Community,Solicitation Permits,soliticor permit,,,Process solicitation permits in accordance with established laws and policies,2
+64,City Clerk,Governance,Agenda Management,clerk agenda,,,Manage the agenda creation and distribution process to ensure that items are properly submitted to the Governing Body for review and approval,6
 65,City Clerk,Governance,Code and Ordinance Codification,code,ordinance,codification,Ensure that laws enacted by ordinance of the Governing Body are timely and accurately codified in the municipal code,9
 66,City Clerk,Governance,Legislative Support,council support,board support,legislative support,Manage all meetings of the Governing Body   Provide research and support to members of the Governing Body,9
 67,City Clerk,Governance,Records Management and Retention,records management,record retention,,Manage the city s records in accordance with established retention schedules and modern records management best practices,14
 68,City Clerk,Community,Records Requests,records requests,FOIA requests,,Receive and process requests to inspect city records in accordance with the Inspection of Public Records Act and city policy,9
-69,City Clerk,Governance,Boards and Commission Support,,,,Provide support  advice  and guidance to the various boards and commissions   Track and maintain the roster of appointments,6
-70,City Clerk,Governance,Notary Public Services,,,,Witness and authenticate signatures for customers,5
+69,City Clerk,Governance,Boards and Commission Support,clerk board and commission,,,Provide support  advice  and guidance to the various boards and commissions   Track and maintain the roster of appointments,6
+70,City Clerk,Governance,Notary Public Services,notary,,,Witness and authenticate signatures for customers,5
 71,City Clerk,Community,Real Estate Document Receipting,,,,Offering  administering the online services,3
-72,City Clerk,Community,Tobacco Licensing,,,,Process tobacco licenses in accordance with established laws and policies,2
-73,Code Enforcement,Community,Citation Issuance and Prosecution Support,,,,Issue citations  and assist with prosecutions,3
-74,Code Enforcement,Community,Derelict Vehicle Code Enforcement,,,,Vehicles without current registration or unable to move under their own power  considered inoperable or abandoned,2
-75,Code Enforcement,Community,Dilapidated and Unsafe Building Enforcement,,,,Ensure uninhabitable buildings are condemned  demolished and removed,4
-76,Code Enforcement,Community,Foreclosed and Vacant Property Enforcement,,,,Monitor  register and collect fees for the registration of foreclosed property by the bank,3
-77,Code Enforcement,Community,Graffiti Abatement,,,,Manage graffiti abatement program,2
-78,Code Enforcement,Community,Mobile Food Vending Vehicle Enforcement,,,,Ensure that all mobile food vendors have their city license and state environmental permit to sell food from their vehicle,2
+72,City Clerk,Community,Tobacco Licensing,tobacco license,tobacco licensing,,Process tobacco licenses in accordance with established laws and policies,2
+73,Code Enforcement,Community,Citation Issuance and Prosecution Support,code citation,,,Issue citations  and assist with prosecutions,3
+74,Code Enforcement,Community,Derelict Vehicle Code Enforcement,abandoned vehicle,,,Vehicles without current registration or unable to move under their own power  considered inoperable or abandoned,2
+75,Code Enforcement,Community,Dilapidated and Unsafe Building Enforcement,unsafe building,abandoned building,,Ensure uninhabitable buildings are condemned  demolished and removed,4
+76,Code Enforcement,Community,Foreclosed and Vacant Property Enforcement,foreclosure,vacant building,,Monitor  register and collect fees for the registration of foreclosed property by the bank,3
+77,Code Enforcement,Community,Graffiti Abatement,graffiti,,,Manage graffiti abatement program,2
+78,Code Enforcement,Community,Mobile Food Vending Vehicle Enforcement,food vending,,,Ensure that all mobile food vendors have their city license and state environmental permit to sell food from their vehicle,2
 79,Code Enforcement,Community,Neighborhood Code Enforcement,neighborhood code enforcement,code compliance,neighborhood compliance,Manage compliance concerns and issue citations where needed,9
-80,Code Enforcement,Community,Off Site Signage Enforcement,,,,Removal of illegal signage posted in the city right of way and on private property without permission,2
+80,Code Enforcement,Community,Off Site Signage Enforcement,illegal sign,,,Removal of illegal signage posted in the city right of way and on private property without permission,2
 81,Code Enforcement,Community,Clear Site Triangle Violation Enforcement,,,,Evaluate and determine the clear site triangle to ensure safety line of site from a stop sign,2
 82,Code Enforcement,Community,Public Right of Way Nuisance Enforcement,,,,Stop the illegal sale of goods in the right of way,3
 83,Code Enforcement,Community,Sign and Banners Enforcement,,,,Ensure that all properties do not exceed the allotted square footage allowed by city ordinance for temporary signage,2
 84,Code Enforcement,Community,Unsafe Conditions or Buildings,,,,Unsafe building investigations and complaint mitigations,2
-85,Code Enforcement,Community,Blight Elimination,,,,Declare a blighted condition on any home,2
-86,Coroner,Community,Autopsy,,,,Autopsy performed by a certified forensic pathologist  used to determine cause and manner of death when required,4
-87,Coroner,Community,Coroner s Inquest,,,,Assemble a jury to determine if criminal charges will be pressed,3
-88,Coroner,Community,Coroner  Training,,,,State required certification for elected  Coroner,3
-89,Coroner,Community,Cremation and Disinterment Permit Issuance,,,,Issue cremation authorizations after screening has taken place,2
-90,Coroner,Community,Death Certificate Signing,,,,Sign the death certificate according to the findings of the investigation,2
-91,Coroner,Community,Death Notifications,,,,Notify families and friends of death,3
-92,Coroner,Community,Death Scene Investigations,,,,Removal of the body from the scene after investigation and retains custody until released to the family,3
-93,Coroner,Community,Livery Service,,,,Transport decedents from the death scene to the hospital morgue  funeral home  and or autopsy facility as necessary,2
-94,Coroner,Community,Post Mortem Examinations,,,,Coroner  makes decision when an autopsy is necessary to determine cause and manner of death,4
-95,Coroner,Community,Toxicology,,,,Lab procedures to identify and quantify potential toxins  and interpretations of the laboratory findings,4
+85,Code Enforcement,Community,Blight Elimination,blight,,,Declare a blighted condition on any home,2
+86,Coroner,Community,Autopsy,autopsy,,,Autopsy performed by a certified forensic pathologist  used to determine cause and manner of death when required,4
+87,Coroner,Community,Coroner s Inquest,coroner inquest,,,Assemble a jury to determine if criminal charges will be pressed,3
+88,Coroner,Community,Coroner  Training,coroner training,,,State required certification for elected  Coroner,3
+89,Coroner,Community,Cremation and Disinterment Permit Issuance,cremation permit,cremation authorization,,Issue cremation authorizations after screening has taken place,2
+90,Coroner,Community,Death Certificate Signing,coroner death certificate,death certificate signing,,Sign the death certificate according to the findings of the investigation,2
+91,Coroner,Community,Death Notifications,death notifications,,,Notify families and friends of death,3
+92,Coroner,Community,Death Scene Investigations,death scene,,,Removal of the body from the scene after investigation and retains custody until released to the family,3
+93,Coroner,Community,Livery Service,livery service,,,Transport decedents from the death scene to the hospital morgue  funeral home  and or autopsy facility as necessary,2
+94,Coroner,Community,Post Mortem Examinations,post mortem,cause of death determination,,Coroner  makes decision when an autopsy is necessary to determine cause and manner of death,4
+95,Coroner,Community,Toxicology,toxicology,,,Lab procedures to identify and quantify potential toxins  and interpretations of the laboratory findings,4
 96,County Administration,Community,Community Support,,,,Attend community functions  write letters of support and be supportive of outside agencies impacted by county operations,4
-97,County Administration,Governance,Commission Meeting Preparation,,,,Assist the clerk in commission meeting agendas and list items needed to be discussed by the commissioners,6
-98,County Administration,Governance,Policy Advocacy,,,,Work with elected and other appointed officials at local  state and federal government to advocate for policies,4
-99,Court,Community,Bonds,,,,Process all bonds for traffic or misdemeanor cases,3
+97,County Administration,Governance,Commission Meeting Preparation,manager commission,,,Assist the clerk in commission meeting agendas and list items needed to be discussed by the commissioners,6
+98,County Administration,Governance,Policy Advocacy,policy advocacy,manager lobby,,Work with elected and other appointed officials at local  state and federal government to advocate for policies,4
+99,Court,Community,Bonds,court bond,,,Process all bonds for traffic or misdemeanor cases,3
 100,Court,Community,Court Security,court security,court protection,,Protect court staff  witnesses  jurors  and the public,9
-101,Court,Community,Customer Service,,,,Assist citizens at the counter with questions or via telephone,4
-102,Court,Community,In Custody Videos,,,,Provide in custody videos for defendants who have been arrested  and have not yet been advised on charges or have not been able to post bond,4
-103,Court,Community,Judicial Services,,,,Trials  hearings  appearances  protective orders  and jury management,4
-104,Court,Community,Appeals Jury Trials,,,,Document and prepare cases as needed,3
+101,Court,Community,Customer Service,court customer service,,,Assist citizens at the counter with questions or via telephone,4
+102,Court,Community,In Custody Videos,court video,,,Provide in custody videos for defendants who have been arrested  and have not yet been advised on charges or have not been able to post bond,4
+103,Court,Community,Judicial Services,judicial services,judicial action,,Trials  hearings  appearances  protective orders  and jury management,4
+104,Court,Community,Appeals Jury Trials,appeal jury,,,Document and prepare cases as needed,3
 105,Court,Community,Probation,probation,,,Provide both supervised and unsupervised probation for defendants,9
-106,Court,Community,Court Appointed Counsel,,,,Legal representation to individuals needing a court appointed attorney,5
-107,Court,Community,Restitution,,,,Provide restitution for victims,4
-108,Court,Community,Court Interpreters,,,,Interpreters for non English speaking defendants  and sign language interpreters,4
-109,Court,Community,Tickets,,,,Process all tickets,4
-110,Court,Community,Case Processing,,,,Process all court proceedings  docket all actions taken with appropriate docket code  process all protective order filings  etc,7
-111,Court,Community,Case Management,,,,Monitor pending caseload  maintain court calendar  process exhibits,6
-112,Court,Community,Court Records Retention,,,,Archiving of contract  grant  bid  court  compliance records  etc,3
-113,Court,Community,Enforcement of Orders,,,,Calendar payment contracts  criminal case and all non compliance follow up,2
+106,Court,Community,Court Appointed Counsel,appointed counsel,,,Legal representation to individuals needing a court appointed attorney,5
+107,Court,Community,Restitution,restitution,,,Provide restitution for victims,4
+108,Court,Community,Court Interpreters,court interpret,,,Interpreters for non English speaking defendants  and sign language interpreters,4
+109,Court,Community,Tickets,court ticket,,,Process all tickets,4
+110,Court,Community,Case Processing,court case processing,,,Process all court proceedings  docket all actions taken with appropriate docket code  process all protective order filings  etc,7
+111,Court,Community,Case Management,court case management,,,Monitor pending caseload  maintain court calendar  process exhibits,6
+112,Court,Community,Court Records Retention,court records retention,,,Archiving of contract  grant  bid  court  compliance records  etc,3
+113,Court,Community,Enforcement of Orders,court order enforcement,,,Calendar payment contracts  criminal case and all non compliance follow up,2
 114,Court,Community,Prisoner Management,,,,Transport  search  secure  and manage behavior of prisoners,3
-115,Court,Community,Weddings,,,,Schedule weddings and perform ceremonies,4
+115,Court,Community,Weddings,court weddings,,,Schedule weddings and perform ceremonies,4
 116,Development,Community,Business License Review and Compliance,,,,Support to city code  including building  and site inspections,4
-117,Development,Community,Home Occupation Inspections and Compliance,,,,Implement city code and site inspections,2
+117,Development,Community,Home Occupation Inspections and Compliance,residential building inspection,,,Implement city code and site inspections,2
 118,Development,Community,Public Hearings Support Planning and Zoning Issues,,,,Provide administrative support for hearings including preparation of meeting minutes and noticing public hearings,4
-119,Development,Community,Building Construction Administration & Permitting,,,,Enforcement and inspections for business licenses,8
-120,Development,Community,Building Construction Inspection,,,,Grading  drainage  and sidewalk inspection,4
-121,Development,Community,Building Construction Plan Review,,,,Review for compliance with zoning regulations and site engineering requirements,8
-122,Development,Community,Business Licensing,,,,Ensure all businesses obtain a city license before starting operations  and follow up on business renewal on a quarterly basis,3
-123,Development,Community,Site Plan Review,,,,Enforce zoning laws,4
-124,Development,Community,Work Without Permits,,,,Ensure contractors  builders  plumbers  and electricians have proper work permits,6
+119,Development,Community,Building Construction Administration & Permitting,building permitting,,,Enforcement and inspections for business licenses,8
+120,Development,Community,Building Construction Inspection,commercial building inspection,,,Grading  drainage  and sidewalk inspection,4
+121,Development,Community,Building Construction Plan Review,building plan review,zoning compliance,,Review for compliance with zoning regulations and site engineering requirements,8
+122,Development,Community,Business Licensing,business licensing,business license,,Ensure all businesses obtain a city license before starting operations  and follow up on business renewal on a quarterly basis,3
+123,Development,Community,Site Plan Review,building site inspections,,,Enforce zoning laws,4
+124,Development,Community,Work Without Permits,building work without permits,stop work orders,,Ensure contractors  builders  plumbers  and electricians have proper work permits,6
 125,Development,Community,Grading and Drainage Plan Review,,,,Review drainage reports  grading and drainage plans and erosion control plans,3
-126,Economic Development,Community,Economic Development Outreach,,,,Manage business relations,5
+126,Economic Development,Community,Economic Development Outreach,economic development outreach,business outreach,,Manage business relations,5
 127,Economic Development,Community,Business Relations,,,,Work with potential businesses  to increase retail and office business opportunities for the city,4
 128,Economic Development,Community,Promotion of the City,,,,Coordinate  plan and execute public events  secure paid advertisements to promote different city events and activities,4
 129,Economic Development,Community,Business and Community Engagement,,,,Promote city businesses via web sites  news letters  city newspaper  etc,6
-130,Economic Development,Community,Business Attraction,,,,Promote prosperities to businesses seeking locations  consultants and developers,4
-131,Economic Development,Community,Business Retention,,,,Work on an ongoing basis with local businesses to help them grow and expand,2
-132,Economic Development,Community,Visitor Center Operations,,,,Supply materials to Visitor Centers,2
-133,Fairgrounds,Community,4 H and FFA Educational Programs,,,,Presentation of useful information related to agricultural  family & consumer science  youth development  family life  business & healthy living,1
-134,Fairgrounds,Community,4H Club Use and Competitions,,,,Provide buildings and space for meetings and competitions  Do all cleanup for these events  Setup and take down of panels and pens,3
-135,Fairgrounds,Community,County Fair,,,,Competitions and exhibits,2
-136,Fairgrounds,Community,County Fair Setup & Take Down Cleanup,,,,All setup and takedown of panels & pens  Cleanup of all bedding and manure  Put all equipment away,3
-137,Fairgrounds,Community,Event and Facility Marketing,,,,Promote and advertise events held at the facility  Maintain website and event calendar,2
-138,Fairgrounds,Community,Fairgrounds Facility Building Maintenance,,,,Cleaning of the facility  inventory of tables and chairs  and other minor repairs as needed,3
-139,Fairgrounds,Community,Fairgrounds Grounds Maintenance and Landscaping,,,,Mowing  trimming  fertilizing  irrigation  weed control and cleanup of the property,2
-140,Fairgrounds,Community,Fairgrounds Parking Lot and Roadway Maintenance,,,,Maintain parking lots  gravel roads and lots,3
-141,Fairgrounds,Community,Tradeshows,,,,Featuring home decor  cabinets  out door furniture  agriculture shows  antique and craft shows   Assists event sponsor and guests as needed including maintaining restrooms & assisting with trash removal,1
-142,Fairgrounds,Community,Event Scheduling and Contract Management,,,,Establishes  implements and follows scheduling procedures for all fairgrounds facilities event usage  Bookings Event insurance Fee collections Scheduling events,2
+130,Economic Development,Community,Business Attraction,business attraction,,,Promote prosperities to businesses seeking locations  consultants and developers,4
+131,Economic Development,Community,Business Retention,business retention,business expansion,BRE,Work on an ongoing basis with local businesses to help them grow and expand,2
+132,Economic Development,Community,Visitor Center Operations,visitor center operations,visitor center,,Supply materials to Visitor Centers,2
+133,Fairgrounds,Community,4 H and FFA Educational Programs,4-H educational,4 H educational,,Presentation of useful information related to agricultural  family & consumer science  youth development  family life  business & healthy living,1
+134,Fairgrounds,Community,4H Club Use and Competitions,4 H competition,,,Provide buildings and space for meetings and competitions  Do all cleanup for these events  Setup and take down of panels and pens,3
+135,Fairgrounds,Community,County Fair,county fair,,,Competitions and exhibits,2
+136,Fairgrounds,Community,County Fair Setup & Take Down Cleanup,county fair setup,county fair cleanup,county fair support,All setup and takedown of panels & pens  Cleanup of all bedding and manure  Put all equipment away,3
+137,Fairgrounds,Community,Event and Facility Marketing,fair marketing,,,Promote and advertise events held at the facility  Maintain website and event calendar,2
+138,Fairgrounds,Community,Fairgrounds Facility Building Maintenance,fairgrounds facility maintenance,fairgrounds building maintenance,,Cleaning of the facility  inventory of tables and chairs  and other minor repairs as needed,3
+139,Fairgrounds,Community,Fairgrounds Grounds Maintenance and Landscaping,fairgrounds grounds maintenance,fairgrounds landscaping,,Mowing  trimming  fertilizing  irrigation  weed control and cleanup of the property,2
+140,Fairgrounds,Community,Fairgrounds Parking Lot and Roadway Maintenance,fairgrounds parking lot,fairgrounds roadway,,Maintain parking lots  gravel roads and lots,3
+141,Fairgrounds,Community,Tradeshows,tradeshow,,,Featuring home decor  cabinets  out door furniture  agriculture shows  antique and craft shows   Assists event sponsor and guests as needed including maintaining restrooms & assisting with trash removal,1
+142,Fairgrounds,Community,Event Scheduling and Contract Management,fairground event scheduling,,,Establishes  implements and follows scheduling procedures for all fairgrounds facilities event usage  Bookings Event insurance Fee collections Scheduling events,2
 143,Fairgrounds,Community,Facility Maintenance and Repair,,,,Facility upkeep of 22 structures Plumbing  Electrical Heating  ventilation  air conditioning maintenance and repairs,2
 144,Fairgrounds,Community,Facility Management,,,,Coordinates special event scheduling & facility usage with event sponsors   Utilizes Mt director  BOCC  & existing facilities users to update long term maintenance and improvement  program to maintain enhance facilities,2
-145,Fairgrounds,Community,Private Event Facility Rental,,,,Birthday parties Baby showers Wedding receptions Family re unions,3
-146,Fairgrounds,Community,Public Dances and Concerts Management,,,,Prepares for by placing stage and ticket booth  conducts event sponsor pre post walk thru,2
-147,Fairgrounds,Community,Service Contract Coordination,,,,Prepares or reviews plans and specifications for the supplies  services and contracts  Trash  Mops  rugs  porta potties Frozen 20   bags of ice  Trash pick up & removal plus pest control,1
-148,Fairgrounds,Community,Youth Sporting Events,,,,Boxing Gymnastics Pole vaulting,1
+145,Fairgrounds,Community,Private Event Facility Rental,fairground rental,,,Birthday parties Baby showers Wedding receptions Family re unions,3
+146,Fairgrounds,Community,Public Dances and Concerts Management,fairground concerts,,,Prepares for by placing stage and ticket booth  conducts event sponsor pre post walk thru,2
+147,Fairgrounds,Community,Service Contract Coordination,fairground service contract,,,Prepares or reviews plans and specifications for the supplies  services and contracts  Trash  Mops  rugs  porta potties Frozen 20   bags of ice  Trash pick up & removal plus pest control,1
+148,Fairgrounds,Community,Youth Sporting Events,youth sporting events,,,Boxing Gymnastics Pole vaulting,1
 149,Financial Services,Governance,Accounts Payable Processing and Maintenance,accounts payable,A/P,,Pay outstanding invoices,13
-150,Financial Services,Governance,Annual External Audit,,,,Assist with annual external audit,8
-151,Financial Services,Governance,Capital Asset Reporting  Tracking  and Accounting,,,,Recording capital assets and updating depreciation schedules,4
-152,Financial Services,Governance,Bank and Treasury Management,,,,Manage city s various bank accounts,4
-153,Financial Services,Governance,Bank Reconciliations,,,,Reconcile bank statements to general ledger,6
-154,Financial Services,Governance,Cashiering and Payment Receipt Processing,,,,Accept and process  payments made via the cashier s desk and reconcile cash drawers,5
-155,Financial Services,Governance,Comprehensive Annual Financial Report  CAFR  Preparation,,,,Prepare and issue CAFR,6
+150,Financial Services,Governance,Annual External Audit,finance audit,external audit,,Assist with annual external audit,8
+151,Financial Services,Governance,Capital Asset Reporting  Tracking  and Accounting,capital asset accounting,capital asset reporting,capital asset management,Recording capital assets and updating depreciation schedules,4
+152,Financial Services,Governance,Bank and Treasury Management,banking management,cash management,,Manage city s various bank accounts,4
+153,Financial Services,Governance,Bank Reconciliations,bank reconciliation,,,Reconcile bank statements to general ledger,6
+154,Financial Services,Governance,Cashiering and Payment Receipt Processing,cash processing,,,Accept and process  payments made via the cashier s desk and reconcile cash drawers,5
+155,Financial Services,Governance,Comprehensive Annual Financial Report  CAFR  Preparation,CAFR,comprehensive annual financial report,,Prepare and issue CAFR,6
 156,Financial Services,Governance,Financial Reporting,financial reporting,accounting reporting,asset reporting,Prepare monthly and quarterly financial statements,12
-157,Financial Services,Governance,General Ledger Maintenance,,,,Prepare journal entries  edit general ledger accounts and manage access,7
-158,Financial Services,Governance,Unclaimed Property Filings,,,,Update and report unclaimed properties,4
+157,Financial Services,Governance,General Ledger Maintenance,general ledger maintenance,general ledger accounting,,Prepare journal entries  edit general ledger accounts and manage access,7
+158,Financial Services,Governance,Unclaimed Property Filings,unclaimed property,,,Update and report unclaimed properties,4
 159,Financial Services,Governance,Accounts Receivable Processing and Maintenance,accounts receivable,A/R,,Generate invoices for services provided by the city,9
 160,Financial Services,Governance,Payroll Processing and Reporting,payroll processing,payroll,,Process payroll for employees,15
 161,Financial Services,Governance,Cash and Investment Management,cash management,investment management,asset management,Report and manage city s cash and investments,9
 162,Financial Services,Governance,Debt Planning and Management,debt management,,,Plan and manage the issuance of debt  and administer the city s debt portfolio,9
-163,Financial Services,Governance,Rating Agency and Investor Relations,,,,Monitor city s investment bond ratings  maintain relationships with bond rating agencies and continuing disclosures,4
-164,Financial Services,Governance,Internal Control and Policy Development and Implementation,,,,Review and implement internal control policies,6
-165,Financial Services,Governance,Capital Budget Development   Approval  and Monitoring,,,,Develop  prepare and review annual capital budget,6
-166,Financial Services,Governance,Financial Planning and Monitoring,,,,Develop  review  and perform various analysis related to the financial plan,7
-167,Financial Services,Governance,Performance Management Development  Tracking and Reporting,,,,Create  track and report on performance measures for each department,4
-168,Financial Services,Governance,Priority Based Budget Development  Implementation  and Reporting,,,,Develop  implement  and report on the priority based budget program,4
-169,Financial Services,Governance,Budget Development   Approval  and Monitoring,budget development,,,Develop  approve and monitor annual budget,15
+163,Financial Services,Governance,Rating Agency and Investor Relations,rating agency relations,investor relations,,Monitor city s investment bond ratings  maintain relationships with bond rating agencies and continuing disclosures,4
+164,Financial Services,Governance,Internal Control and Policy Development and Implementation,finance internal control,finance policy development,finance policy administration,Review and implement internal control policies,6
+165,Financial Services,Governance,Capital Budget Development   Approval  and Monitoring,finance capital budget development,finance capital budget monitoring,,Develop  prepare and review annual capital budget,6
+166,Financial Services,Governance,Financial Planning and Monitoring,financial planning,financial monitoring,,Develop  review  and perform various analysis related to the financial plan,7
+167,Financial Services,Governance,Performance Management Development  Tracking and Reporting,performance management,,,Create  track and report on performance measures for each department,4
+168,Financial Services,Governance,Priority Based Budget Development  Implementation  and Reporting,priority based budgeting,priority based budget implementation,,Develop  implement  and report on the priority based budget program,4
+169,Financial Services,Governance,Budget Development   Approval  and Monitoring,budget development,budget monitoring,,Develop  approve and monitor annual budget,15
 170,Financial Services,Governance,Grant Analysis  Monitoring  and Reporting,grant monitoring,grant analysis,grant reporting,Coordinate and manage grant activity related,10
-171,Financial Services,Governance,Grant Application Review and Approval,,,,Apply  review and approve various grant applications,3
-172,Financial Services,Governance,Cellular Phone Issuance and Maintenance,,,,Issue new and replacement cell phones to city staff   Manage phone options and assist staff with options for coverage and usage,3
-173,Financial Services,Governance,Contract and Agreement Development and Management,,,,Write  review and maintain city contracts,3
-174,Financial Services,Governance,Invitations for Bid  IFB  Processing and Management,,,,Write  disburse and manage all IFB solicitations  including bid opening and analysis  and contract execution and management,5
+171,Financial Services,Governance,Grant Application Review and Approval,grant application review,grant application,grant approval,Apply  review and approve various grant applications,3
+172,Financial Services,Governance,Cellular Phone Issuance and Maintenance,cell phone admin,,,Issue new and replacement cell phones to city staff   Manage phone options and assist staff with options for coverage and usage,3
+173,Financial Services,Governance,Contract and Agreement Development and Management,finance contract management,finance contract development,,Write  review and maintain city contracts,3
+174,Financial Services,Governance,Invitations for Bid  IFB  Processing and Management,invitations for bid,,,Write  disburse and manage all IFB solicitations  including bid opening and analysis  and contract execution and management,5
 175,Financial Services,Governance,Procurement Card  P Card  Management and Compliance,p card,procurement card,,Issue p cards in accordance to policy  manage accounts  and process procurement card transactions,9
-176,Financial Services,Governance,Purchase Order Processing and Management,,,,Manage the procurement of goods and services in compliance with the city procurement code,8
-177,Financial Services,Governance,Request for Proposals  RFP  Processing and Management,,,,Write  disburse and manage all RFP solicitations  including RFP evaluation and contract execution and management,5
-178,Financial Services,Governance,Request for Qualifications  RFQ  Solicitation and Management,,,,Write  disburse and manage all RFQ solicitations  including RFQ evaluation,4
-179,Financial Services,Governance,Vendor Registry,,,,Setup commodity codes designated by vendor,5
+176,Financial Services,Governance,Purchase Order Processing and Management,purchase order processing,purchase order management,procurement management,Manage the procurement of goods and services in compliance with the city procurement code,8
+177,Financial Services,Governance,Request for Proposals  RFP  Processing and Management,request for proposal,rfp,,Write  disburse and manage all RFP solicitations  including RFP evaluation and contract execution and management,5
+178,Financial Services,Governance,Request for Qualifications  RFQ  Solicitation and Management,request for qualification,rfq,,Write  disburse and manage all RFQ solicitations  including RFQ evaluation,4
+179,Financial Services,Governance,Vendor Registry,vendor registry,,,Setup commodity codes designated by vendor,5
 180,Fire OR Emergency Management,Community,Disaster Recovery,,,,Coordinate recovery efforts  to ensure proper documentation for reimbursement,4
 181,Fire OR Emergency Management,Community,Emergency Communications Management,,,,Maintain emergency communications plans and communication rooms,8
 182,Fire OR Emergency Management,Community,Emergency Preparedness Outreach and Training,emergency preparedness,emergency training,,Community outreach in the form of training or presentations relating to emergency management and emergency preparedness,10
-183,Fire OR Emergency Management,Community,Emergency Response Exercises,,,,Develop and conduct full scale  functional and table top emergency response exercises to test emergency operations plan,5
+183,Fire OR Emergency Management,Community,Emergency Response Exercises,emergency response exercise,,,Develop and conduct full scale  functional and table top emergency response exercises to test emergency operations plan,5
 184,Fire OR Emergency Management,Community,Typed Resources Management,,,,Maintain records on Federal Emergency Management Agency  FEMA  qualified typed resources available for deployment,4
-185,Fire OR Emergency Management,Community,Emergency Vehicle Management,,,,Maintain emergency medical vehicles,5
-186,Fire OR Emergency Management,Community,Emergency Medical Services,,,,Advanced and basic life support  ambulance transport services  medical alarm response  fire  emergency medical and motor vehicle collision response,4
-187,Fire OR Emergency Management,Community,Fire Inspections,,,,Fire inspections for businesses  daycares  homecare facilities  and adult and senior care facilities  fireworks  hospitals  schools  and special events,6
-188,Fire OR Emergency Management,Community,Fire Investigations,,,,Fire origin and cause  fire watch  and assist law enforcement with criminal investigation,5
+185,Fire OR Emergency Management,Community,Emergency Vehicle Management,emergency vehicle maintenance,emergency vehicle repair,,Maintain emergency medical vehicles,5
+186,Fire OR Emergency Management,Community,Emergency Medical Services,emergency medical service,medical response,,Advanced and basic life support  ambulance transport services  medical alarm response  fire  emergency medical and motor vehicle collision response,4
+187,Fire OR Emergency Management,Community,Fire Inspections,fire inspection,,,Fire inspections for businesses  daycares  homecare facilities  and adult and senior care facilities  fireworks  hospitals  schools  and special events,6
+188,Fire OR Emergency Management,Community,Fire Investigations,fire investigation,fire origin,,Fire origin and cause  fire watch  and assist law enforcement with criminal investigation,5
 189,Fire OR Emergency Management,Community,Fire Response,fire response,,,Suppress and extinguish fires to protect lives and to prevent the destruction of property  On scene incident management,11
 190,Fire OR Emergency Management,Community,Fire Scene Rehabilitation,,,,Materials and equipment to provide on scene rehabilitation of firefighters,3
-191,Fire OR Emergency Management,Community,Plan Review,,,,Review commercial construction plans for proper fire safety features,5
-192,Fire OR Emergency Management,Community,School Fire Drills,,,,Collaborate with local schools for routine fire drills,2
-193,Fire OR Emergency Management,Community,Special Event Stand by Services,,,,Medical stand by services for special events and extended incidents,5
-194,Fire OR Emergency Management,Community,Early Warning System Management,,,,Coordinator of the mass notification system,3
-195,Fire OR Emergency Management,Community,Emergency Operations Center Management,,,,Serve as emergency operations center manager in times of a disaster,8
-196,Fire OR Emergency Management,Community,Emergency Warning System Coordination,,,,Serve as a liaison for purchasing  licensing  and general maintenance of communication and warning signals,1
-197,Fire OR Emergency Management,Community,First Aid and CPR Training,,,,Conduct classes  workshops  and demonstrations to teach principles  techniques  or methods,8
-198,Fire OR Emergency Management,Governance,Employee Safety Planning,,,,Establish  maintain  and implement a safety plan for employees,1
-199,Fire OR Emergency Management,Community,Ambulance Billing,,,,Ensures accuracy of patient care reports for billing purposes and submits billing to various entities for payment,2
+191,Fire OR Emergency Management,Community,Plan Review,fire plan review,,,Review commercial construction plans for proper fire safety features,5
+192,Fire OR Emergency Management,Community,School Fire Drills,fire drill,,,Collaborate with local schools for routine fire drills,2
+193,Fire OR Emergency Management,Community,Special Event Stand by Services,special event medical,special event response,,Medical stand by services for special events and extended incidents,5
+194,Fire OR Emergency Management,Community,Early Warning System Management,emergency early warning,,,Coordinator of the mass notification system,3
+195,Fire OR Emergency Management,Community,Emergency Operations Center Management,emergency operation center,emergency management,eoc,Serve as emergency operations center manager in times of a disaster,8
+196,Fire OR Emergency Management,Community,Emergency Warning System Coordination,emergency warning system,,,Serve as a liaison for purchasing  licensing  and general maintenance of communication and warning signals,1
+197,Fire OR Emergency Management,Community,First Aid and CPR Training,first aid training,cpr training,,Conduct classes  workshops  and demonstrations to teach principles  techniques  or methods,8
+198,Fire OR Emergency Management,Governance,Employee Safety Planning,employee safety plan,,,Establish  maintain  and implement a safety plan for employees,1
+199,Fire OR Emergency Management,Community,Ambulance Billing,ambulance bill,,,Ensures accuracy of patient care reports for billing purposes and submits billing to various entities for payment,2
 200,Fire OR Emergency Management,Community,State Inspection Compliance Monitoring,,,,Ensures that department is in compliance with state regulations and statutes for annual inspection,1
 201,Fire OR Emergency Management,Community,Controlled Medication Storage Management,,,,Controlled medications are secured and logged to ensure their proper use,1
 202,Fire OR Emergency Management,Community,Basic Level Intra facility Patient Transfers,,,,Providing basic level  non paramedic  patient transfers from one medical facility to another medical facility,1
-203,Fire OR Emergency Management,Community,Patient Care Reports,,,,Each ambulance call needs to be documented to provide record of all pertinent events that occurred during the call,2
+203,Fire OR Emergency Management,Community,Patient Care Reports,patient care report,,,Each ambulance call needs to be documented to provide record of all pertinent events that occurred during the call,2
 204,Fire OR Emergency Management,Community,Quality Assurance and Improvement,,,,Program reviews all of the reports written for each call to ensure that medical protocols are being followed and identify any areas for improvement,2
-205,Fire OR Emergency Management,Community,Emergency Vehicle Operation Training,,,,Staff training on how to operate emergency vehicles,1
-206,Fire OR Emergency Management,Community,Employee First Aid and CPR Training,,,,Ensures staff is trained in CPR and advanced level medical response,3
-207,Fleet,Governance,City Fleet Acquisition,,,,Acquisition of new vehicles according to the budget,6
+205,Fire OR Emergency Management,Community,Emergency Vehicle Operation Training,emergency vehicle training,,,Staff training on how to operate emergency vehicles,1
+206,Fire OR Emergency Management,Community,Employee First Aid and CPR Training,employee first aid training,employee cpr training,employee medical training,Ensures staff is trained in CPR and advanced level medical response,3
+207,Fleet,Governance,City Fleet Acquisition,fleet acquisition,new vehicle,,Acquisition of new vehicles according to the budget,6
 208,Fleet,Governance,City Fleet Fuel Station Management,fuel station,fuel usage management,,Manage fuel keys and fuel usage by city departments,9
-209,Fleet,Governance,City Fleet Maintenance and Repair,fleet,fleet maintenance,vehicle,Fleet maintenance and repairs for all city vehicles,30
+209,Fleet,Governance,City Fleet Maintenance and Repair,fleet repair,fleet maintenance,vehicle maintenance,Fleet maintenance and repairs for all city vehicles,30
 210,Fleet,Governance,City Fleet Replacement Management,fleet replacement,vehicle replacement,replacement management,Utilize a matrix system to determine proper interval of vehicle replacement,6
-211,Fleet,Governance,City Vehicle Decal Installation and Removal,,,,Install and remove city emblem decal,4
-212,Fleet,Governance,Fleet Road Call Services,,,,Answer phone calls  dispatch fleet staff  and tow truck to complete onsite repairs or tow vehicles to fleet shop or other repair facilities,5
-213,Fleet,Governance,Fleet Vehicle Disposal,,,,Manage the disposal  of vehicles by auction  trade in or salvage,4
-214,Fleet,Governance,Fleet Vehicle Licensing,,,,Manage vehicle licensing  registration  and insurance for city vehicles,3
-215,Fleet,Governance,Fleet Vehicle Tracking,,,,Manage and track the assignment of vehicles  Ensure all drivers are qualified to be operating certain vehicles and equipment,3
+211,Fleet,Governance,City Vehicle Decal Installation and Removal,city fleet decal,city vehicle decal,city logo,Install and remove city emblem decal,4
+212,Fleet,Governance,Fleet Road Call Services,fleet service call,,,Answer phone calls  dispatch fleet staff  and tow truck to complete onsite repairs or tow vehicles to fleet shop or other repair facilities,5
+213,Fleet,Governance,Fleet Vehicle Disposal,fleet disposal,vehicle disposal,,Manage the disposal  of vehicles by auction  trade in or salvage,4
+214,Fleet,Governance,Fleet Vehicle Licensing,fleet licensing,vehicle liscensing,,Manage vehicle licensing  registration  and insurance for city vehicles,3
+215,Fleet,Governance,Fleet Vehicle Tracking,fleet tracking,vehicle tracking,,Manage and track the assignment of vehicles  Ensure all drivers are qualified to be operating certain vehicles and equipment,3
 216,Fleet,Governance,Auto Body Repair,,,,Manage auto body repairs,4
-217,Golf,Community,Adult Golf Lessons,,,,Provide adult golf lessons,1
-218,Golf,Community,Golf Banquet,,,,Food  drinks  and rentals of the facilities,1
-219,Golf,Community,Golf Grounds Maintenance,,,,Maintenance of the golf course,8
+217,Golf,Community,Adult Golf Lessons,adult golf lessons,,,Provide adult golf lessons,1
+218,Golf,Community,Golf Banquet,golf banquet,golf facility rental,,Food  drinks  and rentals of the facilities,1
+219,Golf,Community,Golf Grounds Maintenance,golf ground maintenance,golf grounds,,Maintenance of the golf course,8
 220,Golf,Community,Golf Operations  League  Tournaments  Rentals  Rounds,golf operations,golf tourament,golf rentals,Leagues  tournaments  rentals rounds of golf,9
-221,Golf,Community,Golf Pro Shops,,,,Oversight of pro shop items  including sales  purchasing and monitoring inventory,2
-222,Golf,Community,Youth Golf Lessons,,,,Provide youth golf lessons,1
-223,Golf,Community,Golf  Tournaments,,,,Registrations  scheduling of staff  co ordination of golf course,2
-224,Golf,Community,Driving Range Operations,,,,Hiring and scheduling of range help  ball cleaning and sorting  etc,2
-225,Golf,Community,Fairway Concessions,,,,Sales occurring on the  golf  course,1
-226,Golf,Community,Golf  Cart Fleet Maintenance,,,,Mechanical repairs and scheduled maintenance,2
-227,Golf,Community,Golf  Cart Rentals,,,,Includes daily cleaning  staging  end of day parking,1
+221,Golf,Community,Golf Pro Shops,golf pro shop,,,Oversight of pro shop items  including sales  purchasing and monitoring inventory,2
+222,Golf,Community,Youth Golf Lessons,youth golf lesson,,,Provide youth golf lessons,1
+223,Golf,Community,Golf  Tournaments,golf tournament,golf registration,,Registrations  scheduling of staff  co ordination of golf course,2
+224,Golf,Community,Driving Range Operations,driving range operation,,,Hiring and scheduling of range help  ball cleaning and sorting  etc,2
+225,Golf,Community,Fairway Concessions,golf concessions,fairway concession,,Sales occurring on the  golf  course,1
+226,Golf,Community,Golf  Cart Fleet Maintenance,golf cart repair,golf cart maintenance,,Mechanical repairs and scheduled maintenance,2
+227,Golf,Community,Golf  Cart Rentals,golf cart rental,,,Includes daily cleaning  staging  end of day parking,1
 228,Health Services,Community,24 7 Residential Services,,,,Includes varying degrees of 24 7 support and skill delivery for clients who are struggling with chronic mental illness,1
 229,Health Services,Community,Acute Care,,,,24 7 mobile crisis teams and call center that complete crisis assessments  and safety plans,1
 230,Health Services,Community,Adult Mental  Health  Assessment,,,,Support those in the community who are experiencing a serious mental illness,1
@@ -260,10 +260,10 @@ RX_ProgID,ItemMeta1,ServiceType,ProgName,key1,key2,key3,ProgDescription,ProgCoun
 259,Health Services,Community,STD Testing  Treatment and Education,,,,Perform testing for applicable clients with sexually transmitted infections  Provide treatment as needed  Educate clients,1
 260,Health Services,Community,VA Health Care Assistance,,,,Assist veterans with applications for VA  Health  Care to access medical care and services,1
 261,Health Services,Community,WIC Program Outreach,,,,Outreach nutrition education activities,1
-262,Highway,Community,Adopt a Highway Program,,,,Track and provide supplies for assigned to different road segments,2
-263,Highway,Community,Anti Icing Road Treatment,,,,Apply liquid anti icing chemicals prior to the start of a storm or icing event  including frost and black ice prevention,2
-264,Highway,Community,Asphalt Chip Seal Coating,,,,Place asphalt materials and cover aggregate to seal surface of pavement,2
-265,Highway,Community,Asphalt Inspection,,,,Inspect construction of asphalt projects,2
+262,Highway,Community,Adopt a Highway Program,adopt highway,,,Track and provide supplies for assigned to different road segments,2
+263,Highway,Community,Anti Icing Road Treatment,anti icing road,anti icing highway,,Apply liquid anti icing chemicals prior to the start of a storm or icing event  including frost and black ice prevention,2
+264,Highway,Community,Asphalt Chip Seal Coating,highway asphalt coating,highway chip seal,,Place asphalt materials and cover aggregate to seal surface of pavement,2
+265,Highway,Community,Asphalt Inspection,asphalt inspection,,,Inspect construction of asphalt projects,2
 266,Highway,Community,Asphalt Milling Bump Removal,,,,Mill pavement to provide a smoother driving surface and or to drain wheel ruts,2
 267,Highway,Community,Asphalt Paving   Intersections,,,,Paving intersections and driveway connections,5
 268,Highway,Community,Asphalt Spot Repair Pothole Repair,,,,Minor repairs of pavement distress  Fill depressions in the pavement surface with asphalt materials,2
@@ -299,89 +299,89 @@ RX_ProgID,ItemMeta1,ServiceType,ProgName,key1,key2,key3,ProgDescription,ProgCoun
 298,Highway,Community,Waterway Slope Repair,,,,Maintain and repair abutment slopes and the natural waterway embankments,2
 299,Highway,Community,Woody Vegetation Maintenance,,,,Cutting and disposing of unwanted woody vegetation,1
 300,Human Resources,Governance,Building Access Security and Badge Management,,,,Provide badges for new and existing employees for appropriate building access  and track utilization,3
-301,Human Resources,Governance,Classification and Compensation Management,,,,Monitor and maintain city classification  review reclassification requests  temporary duty assignments  new position requests  and management of compensation structure,6
-302,Human Resources,Governance,Confidential Personnel and Medical Records Maintenance,,,,Maintain separate confidential personnel records  and ensure statutory guidelines,8
-303,Human Resources,Governance,Review  approve  and enter personnel transaction actions in HRIS Payroll,,,,Process employee transactions  new hire  promotions  change in pay  changes in status  separation entries  etc    and provide payroll support,4
-304,Human Resources,Governance,Driving Record Monitoring,,,,Maintain and monitor employee driving records for city insurability standards  via state and driving databases,3
+301,Human Resources,Governance,Classification and Compensation Management,classification management,compensation management,,Monitor and maintain city classification  review reclassification requests  temporary duty assignments  new position requests  and management of compensation structure,6
+302,Human Resources,Governance,Confidential Personnel and Medical Records Maintenance,confidential record maintenance,,,Maintain separate confidential personnel records  and ensure statutory guidelines,8
+303,Human Resources,Governance,Review  approve  and enter personnel transaction actions in HRIS Payroll,HR information system,HRIS,personnel transaction,Process employee transactions  new hire  promotions  change in pay  changes in status  separation entries  etc    and provide payroll support,4
+304,Human Resources,Governance,Driving Record Monitoring,monitor driving record,,,Maintain and monitor employee driving records for city insurability standards  via state and driving databases,3
 305,Human Resources,Governance,Employee Benefits Administration,employee benefits,benefits administration,,Administration and management of employee benefits such as health  dental  vision  retirement  employee assistance programs,12
-306,Human Resources,Governance,Employee Communication,,,,Provide communication to employees of training initiatives or opportunities,4
-307,Human Resources,Governance,Employee Development Training,employee development,development training,employee training,Develop  communicate  and train all employees on various topics,12
-308,Human Resources,Governance,Employee Grievance Investigations and Response,,,,Formally respond to Equal Employment Opportunity Claims  grievances  and assist with litigation cases relating to employment,7
-309,Human Resources,Governance,Employee Off Boarding and  Exit Interviews,,,,Conduct meetings with separating employees to identify and analyze reasons for turnover  overall trends  and to mitigate future risks,7
-310,Human Resources,Governance,Employee Performance Evaluation Coordination and Support,,,,Track and document the performance of employees throughout the employment relationship,5
-311,Human Resources,Governance,Federal Law Compliance,,,,Manage risk through compliance with state and federal laws,6
-312,Human Resources,Governance,Labor Relations Negotiations,,,,Serve as city employment representative on subject matter expert in union relation issues  and negotiate bargaining unit contracts,4
+306,Human Resources,Governance,Employee Communication,employee communication,,,Provide communication to employees of training initiatives or opportunities,4
+307,Human Resources,Governance,Employee Development Training,employee development,employee training,,Develop  communicate  and train all employees on various topics,12
+308,Human Resources,Governance,Employee Grievance Investigations and Response,employee grievance,employee claim investigation,,Formally respond to Equal Employment Opportunity Claims  grievances  and assist with litigation cases relating to employment,7
+309,Human Resources,Governance,Employee Off Boarding and  Exit Interviews,exit interview,employee off boarding,,Conduct meetings with separating employees to identify and analyze reasons for turnover  overall trends  and to mitigate future risks,7
+310,Human Resources,Governance,Employee Performance Evaluation Coordination and Support,employee performance evaluation,employee performance management,,Track and document the performance of employees throughout the employment relationship,5
+311,Human Resources,Governance,Federal Law Compliance,human resources federal law compliance,risk management,,Manage risk through compliance with state and federal laws,6
+312,Human Resources,Governance,Labor Relations Negotiations,labor relation negotiation,,,Serve as city employment representative on subject matter expert in union relation issues  and negotiate bargaining unit contracts,4
 313,Human Resources,Governance,New Employee On Boarding and Orientation,new employee orientation,employee on boarding,,Provide resources for new employees  and provide comprehensive introduction to city,10
-314,Human Resources,Governance,Pre and Post Employment Screening,,,,Conduct background checks  drug testing  physicals  driver s license history checks  and  finalize post offer employment process,6
+314,Human Resources,Governance,Pre and Post Employment Screening,employment screening,employee background check,employee drug test,Conduct background checks  drug testing  physicals  driver s license history checks  and  finalize post offer employment process,6
 315,Human Resources,Governance,Unemployment Claims Response and Hearings,unemployment,,,Respond to separated employee s unemployment claims and attend hearings and appeals,9
 316,Human Resources,Governance,Workers Comp Administration,workers comp,workers compensation,,Analyze  review and disburse workers compensation funds,9
-317,Human Resources,Governance,Hiring & Applicant Tracking System,,,,Post vacant positions  Review and evaluate applications,8
+317,Human Resources,Governance,Hiring & Applicant Tracking System,hiring system,applicant tracking system,,Post vacant positions  Review and evaluate applications,8
 318,Human Resources,Governance,Employee Relations Conflict Resolution,employee relations,employee conflict resolution,,Provide consultation and coaching to improve employee performance  and provide strategies with employment disputes,9
 319,Human Resources,Governance,Employment Policy and Procedure Administration,employment policy,,,Review  research and maintain accurate employment policies,9
-320,Information Technology,Governance,Audio Visual Administration and Support,,,,Administration and support of audio and visual resources,5
+320,Information Technology,Governance,Audio Visual Administration and Support,audio visual support,av support,,Administration and support of audio and visual resources,5
 321,Information Technology,Governance,Backup  Business Continuity and Disaster Recovery,backup,disaster recovery,business continuity,Implementation of policy  best practices and procedures to ensure business continuity and disaster recovery,10
-322,Information Technology,Governance,Cellular Phone Support and Integration Services,,,,Cellular support and integration,5
-323,Information Technology,Governance,Cloud Web Administration and Support,,,,Support of all cloud and web resources and applications,6
+322,Information Technology,Governance,Cellular Phone Support and Integration Services,mobile phone,cell phone support,,Cellular support and integration,5
+323,Information Technology,Governance,Cloud Web Administration and Support,cloud application,cloud administration,web administration,Support of all cloud and web resources and applications,6
 324,Information Technology,Governance,Desktop and Mobile Resource Administration and Support,desktop support,mobile technology support,,Support and inventory of all desktop and mobile resources,9
 325,Information Technology,Governance,End User Hardware and Software Training,end user training,hardware training,software training,User technology resource and policy training,10
 326,Information Technology,Governance,Enterprise Applications Administration and Support,applications,,,Support and maintenance of all city applications,10
-327,Information Technology,Governance,Local Area Network  LAN  Administration and Support,,,,Support and maintenance of all LAN infrastructure and hardware and software,8
-328,Information Technology,Governance,Mobile Network Administration and Support,,,,Support of all mobile infrastructure,8
-329,Information Technology,Governance,Security Surveillance Camera Support,,,,Support of surveillance camera technologies,5
+327,Information Technology,Governance,Local Area Network  LAN  Administration and Support,local area network,lan,,Support and maintenance of all LAN infrastructure and hardware and software,8
+328,Information Technology,Governance,Mobile Network Administration and Support,mobile network,,,Support of all mobile infrastructure,8
+329,Information Technology,Governance,Security Surveillance Camera Support,security camera,surveillance camera,,Support of surveillance camera technologies,5
 330,Information Technology,Governance,Server Administration and Support,server,,,Support and maintenance of all server infrastructure,10
-331,Information Technology,Governance,Software Licensing and Compliance,,,,Licensing inventory  upgrade and compliance assurance,6
+331,Information Technology,Governance,Software Licensing and Compliance,software licensing,software license,,Licensing inventory  upgrade and compliance assurance,6
 332,Information Technology,Governance,Technology Procurement and Sourcing,technology purchases,technology sourcing,,Oversight and direction to all technology purchases and initiatives,10
 333,Information Technology,Governance,Technology Security Management and Policy Compliance,technology security,technology security management,security policy,Development  enforcement  and communication of security policies,12
-334,Information Technology,Governance,Phone System Administration and Support,,,,Support and maintenance of phone system,6
-335,Information Technology,Governance,Wide Area Network  WAN  Administration and Support,,,,Support and maintenance of all WAN infrastructure,5
-336,Information Technology,Governance,Wireless Network Administration and Support,,,,Support and maintenance of all  wireless infrastructure,7
-337,Jail,Community,Adjudicated Secure Detention,,,,Youth convicted of a crime and awaiting sentencing or placement,2
-338,Jail,Community,Alcohol and Drug Education Program,,,,Drug and alcohol education program for offenders with minimal drug and alcohol histories,4
-339,Jail,Community,Anger Management,,,,Cognitive behavioral group education program that addresses issues leading to violent behavior,4
-340,Jail,Community,Building Repair & Maintenance   Jail,,,,Maintain and repair the jail,3
-341,Jail,Community,Building Security Camera Monitoring,,,,Monitor cameras,3
-342,Jail,Community,Chaplain and Religious Services,,,,Jail  Chaplain who oversees the religious needs of the facility,4
-343,Jail,Community,Commissary Services,,,,Assist and deliver commissary products as well and monetary control of funds,3
-344,Jail,Community,Community Service Program,,,,Provides individual and supervised work crews  documents and reports hours to the courts to satisfy fines   jail  time  as a sentence and as an alternative to formal court processing,5
-345,Jail,Community,County Transports,,,,Transporting inmates to and from other county and municipal  jails  juvenile detention centers for court  medical  dental  etc,4
-346,Jail,Community,Detoxification,,,,Individuals who have not committed a crime and are detoxing  and inmates who have to detox before being placed in population,5
-347,Jail,Community,Domestic Violence Assessment,,,,Assesses offender  s needs in the areas of truthfulness  alcohol  control  drugs  violence and stress coping skills,1
-348,Jail,Community,Driving Under the Influence Evaluation,,,,Includes a factual basis of the circumstances  the offender  s case information,2
+334,Information Technology,Governance,Phone System Administration and Support,phone,,,Support and maintenance of phone system,6
+335,Information Technology,Governance,Wide Area Network  WAN  Administration and Support,wide area network,wan,,Support and maintenance of all WAN infrastructure,5
+336,Information Technology,Governance,Wireless Network Administration and Support,wireless network,,,Support and maintenance of all  wireless infrastructure,7
+337,Jail,Community,Adjudicated Secure Detention,juvenile crime,juvenile detention,,Youth convicted of a crime and awaiting sentencing or placement,2
+338,Jail,Community,Alcohol and Drug Education Program,alcohol education,drug education,,Drug and alcohol education program for offenders with minimal drug and alcohol histories,4
+339,Jail,Community,Anger Management,anger management,,,Cognitive behavioral group education program that addresses issues leading to violent behavior,4
+340,Jail,Community,Building Repair & Maintenance   Jail,jail maintenance,jail repair,,Maintain and repair the jail,3
+341,Jail,Community,Building Security Camera Monitoring,jail security camera,,,Monitor cameras,3
+342,Jail,Community,Chaplain and Religious Services,jail chaplain,jail religious service,,Jail  Chaplain who oversees the religious needs of the facility,4
+343,Jail,Community,Commissary Services,jail commissary,,,Assist and deliver commissary products as well and monetary control of funds,3
+344,Jail,Community,Community Service Program,community service,,,Provides individual and supervised work crews  documents and reports hours to the courts to satisfy fines   jail  time  as a sentence and as an alternative to formal court processing,5
+345,Jail,Community,County Transports,transport inmates,,,Transporting inmates to and from other county and municipal  jails  juvenile detention centers for court  medical  dental  etc,4
+346,Jail,Community,Detoxification,detoxification,,,Individuals who have not committed a crime and are detoxing  and inmates who have to detox before being placed in population,5
+347,Jail,Community,Domestic Violence Assessment,domestic violence assessment,,,Assesses offender  s needs in the areas of truthfulness  alcohol  control  drugs  violence and stress coping skills,1
+348,Jail,Community,Driving Under the Influence Evaluation,dui,driving under influence,,Includes a factual basis of the circumstances  the offender  s case information,2
 349,Jail,Community,Electronic Monitoring Activation,,,,Hook up clients on electronic monitoring sentence,2
-350,Jail,Community,Extradition,,,,Handle in coming and  out going extraditions from out of state  setting up travel plans  etc,5
-351,Jail,Community,Fingerprint Services,,,,Manage all fingerprint service for employment  compliance  volunteers  and other licenses,3
-352,Jail,Community,Food Service Management,,,,Preparation of all menus and food,4
-353,Jail,Community,Housing of Inmates,,,,The housing and security of arrested offenders,4
-354,Jail,Community,Inmate Activities,,,,Provide a variety of programs to engage and assist interested inmates,6
-355,Jail,Community,Inmate Cell Cleaning,,,,Daily cleaning of cells,3
-356,Jail,Community,Inmate Cell Movement,,,,Move inmates from cell to cell for medical issues  security measures  special needs or other needed movements,3
-357,Jail,Community,Inmate Medical Services,,,,Oversee inmate doctor and nurse visits,5
-358,Jail,Community,Jail Records Management,,,,Maintain inmate  jail  files indefinitely,5
-359,Jail,Community,Jail Security,,,,Maintain  jail  security by completing cell checks  random prisoner counts  monitoring cell areas on surveillance equipment  etc,4
-360,Jail,Community,Key Control,,,,Use of automated key retrieval system for deputies to have keys necessary to do their job,5
-361,Jail,Community,Outpatient Substance Abuse,,,,This program is a variable length substance abuse treatment program,3
-362,Jail,Community,Prisoner Intake,,,,Properly record and complete the prisoner booking process  Orientate new prisoners to the  jail  Distribute clothing  bedding  and personal items to new prisoners,3
-363,Jail,Community,Prisoner Release,,,,Properly record and complete prisoner release procedures  Obtain all  jail  issued property from prisoner and return all personal property to prisoner,3
-364,Legal,Community,Land Acquisition Assistance,,,,Drafting or reviewing contracts and deeds for negotiated purchases,4
-365,Legal,Community,Misdemeanor Prosecutions,,,,Prosecution of violations of city ordinance,7
-366,Legal,Community,Vehicle Seizures Enforcement,,,,Enforce civil seizure ordinance,1
-367,Legal,Governance,Risk Management Insurance Coverage,,,,Evaluate & coordinate insurance & self insurance,3
+350,Jail,Community,Extradition,extradition,,,Handle in coming and  out going extraditions from out of state  setting up travel plans  etc,5
+351,Jail,Community,Fingerprint Services,jail fingerprint,,,Manage all fingerprint service for employment  compliance  volunteers  and other licenses,3
+352,Jail,Community,Food Service Management,jail food service,jail cafeteria,,Preparation of all menus and food,4
+353,Jail,Community,Housing of Inmates,inmate housing,,,The housing and security of arrested offenders,4
+354,Jail,Community,Inmate Activities,inmate activities,,,Provide a variety of programs to engage and assist interested inmates,6
+355,Jail,Community,Inmate Cell Cleaning,jail cell cleaning,inmate cell cleaning,,Daily cleaning of cells,3
+356,Jail,Community,Inmate Cell Movement,move inmate,,,Move inmates from cell to cell for medical issues  security measures  special needs or other needed movements,3
+357,Jail,Community,Inmate Medical Services,inmate medical service,inmate medical care,,Oversee inmate doctor and nurse visits,5
+358,Jail,Community,Jail Records Management,jail record management,jail record maintenance,jail record retention,Maintain inmate  jail  files indefinitely,5
+359,Jail,Community,Jail Security,jail security,cell checks,,Maintain  jail  security by completing cell checks  random prisoner counts  monitoring cell areas on surveillance equipment  etc,4
+360,Jail,Community,Key Control,jail key control,,,Use of automated key retrieval system for deputies to have keys necessary to do their job,5
+361,Jail,Community,Outpatient Substance Abuse,outpatient substance abuse,,,This program is a variable length substance abuse treatment program,3
+362,Jail,Community,Prisoner Intake,prisoner intake,,,Properly record and complete the prisoner booking process  Orientate new prisoners to the  jail  Distribute clothing  bedding  and personal items to new prisoners,3
+363,Jail,Community,Prisoner Release,prisoner release,,,Properly record and complete prisoner release procedures  Obtain all  jail  issued property from prisoner and return all personal property to prisoner,3
+364,Legal,Community,Land Acquisition Assistance,land acquistion contract,real estate contract,real estate deed,Drafting or reviewing contracts and deeds for negotiated purchases,4
+365,Legal,Community,Misdemeanor Prosecutions,prosecution,,,Prosecution of violations of city ordinance,7
+366,Legal,Community,Vehicle Seizures Enforcement,vehicle seizure,,,Enforce civil seizure ordinance,1
+367,Legal,Governance,Risk Management Insurance Coverage,risk insurance coverage,,,Evaluate & coordinate insurance & self insurance,3
 368,Legal,Governance,City Officials and Departments Legal Advisement,legal advisement,legal counsel,legal advice,Advise city officials and management staff on matters with legal consequence,13
-369,Legal,Governance,Contract Claims Counsel,,,,Negotiate  mediate and litigate when required  in house and or with outside counsel  contract claims by or against city,6
-370,Legal,Governance,Contract Preparation and Review,,,,Draft  negotiate and or review and approve all city contracts  deeds  easements  leases  insurance requirements etc,7
-371,Legal,Governance,Employment Representation,,,,Represent City in employment matters  collective bargaining and employee claims   in house or with outside counsel,4
-372,Legal,Governance,Insurance   Subrogation Pursuit,,,,Pursue claims for damage to city property,4
-373,Legal,Governance,Law Library Maintenance,,,,Maintaining law library with periodic updates supplements  and LEXIS online research service,3
-374,Legal,Governance,Ordinance and Policy Preparation and Review,,,,Assist departments in drafting new ordinances and administrative policies  as well as revising and amending existing ordinances and policies,8
-375,Legal,Governance,Risk Management   Safety Program & Claim Mitigation,,,,Consult with other departments on risk management issues   review insurance requirements in contracts  identify hazards  loss exposures and controls,4
-376,Library,Community,Collection Development and Maintenance,,,,Acquire  develop  and manage library collections,7
-377,Library,Community,Adult Programs,,,,Provide a variety of life long learning programs to adults,8
-378,Library,Community,Children s Programs,,,,Provide enriching programs for children,7
-379,Library,Community,Family Programs,,,,Provide enriching and life long learning programs to families,3
-380,Library,Community,Teen Programs,,,,Provide enriching programs for teens,3
-381,Library,Community,Reference Services,,,,Provide information to customers of all ages,6
-382,Library,Community,Technology Services and Support,,,,Provides and supports technology services for the public and library staff,7
-383,Library,Community,Circulation Services,,,,Provides circulation of library items,4
+369,Legal,Governance,Contract Claims Counsel,contract claims,contract negotiation,,Negotiate  mediate and litigate when required  in house and or with outside counsel  contract claims by or against city,6
+370,Legal,Governance,Contract Preparation and Review,contract preparation,contract review,,Draft  negotiate and or review and approve all city contracts  deeds  easements  leases  insurance requirements etc,7
+371,Legal,Governance,Employment Representation,city representation,,,Represent City in employment matters  collective bargaining and employee claims   in house or with outside counsel,4
+372,Legal,Governance,Insurance   Subrogation Pursuit,city property damage,property claims,,Pursue claims for damage to city property,4
+373,Legal,Governance,Law Library Maintenance,law library,,,Maintaining law library with periodic updates supplements  and LEXIS online research service,3
+374,Legal,Governance,Ordinance and Policy Preparation and Review,ordinance review,ordinance preparation,,Assist departments in drafting new ordinances and administrative policies  as well as revising and amending existing ordinances and policies,8
+375,Legal,Governance,Risk Management   Safety Program & Claim Mitigation,risk mitigation,risk insurance review,,Consult with other departments on risk management issues   review insurance requirements in contracts  identify hazards  loss exposures and controls,4
+376,Library,Community,Collection Development and Maintenance,library collection,collection development,collection management,Acquire  develop  and manage library collections,7
+377,Library,Community,Adult Programs,adult program,,,Provide a variety of life long learning programs to adults,8
+378,Library,Community,Children s Programs,children program,youth program,,Provide enriching programs for children,7
+379,Library,Community,Family Programs,family program,,,Provide enriching and life long learning programs to families,3
+380,Library,Community,Teen Programs,teen program,,,Provide enriching programs for teens,3
+381,Library,Community,Reference Services,library reference,reference service,library information,Provide information to customers of all ages,6
+382,Library,Community,Technology Services and Support,technology service,technology support,technology class,Provides and supports technology services for the public and library staff,7
+383,Library,Community,Circulation Services,library circulation ,circulation service,,Provides circulation of library items,4
 384,Mayor OR Commission,Community,Community Marketing and Promotion,,,,Promote and market the city to large and small businesses to achieve growth in products and services,4
 385,Mayor OR Commission,Community,Community Recognition Events,,,,Attend ribbon cuttings and ground breaking events,6
 386,Mayor OR Commission,Governance,Boards and Commissions Appointments,,,,Appoint all members of boards  commissions and authorities,4
@@ -417,16 +417,16 @@ RX_ProgID,ItemMeta1,ServiceType,ProgName,key1,key2,key3,ProgDescription,ProgCoun
 416,Motor Vehicle,Community,Handicap Placard Requests,,,,Process handicap placard requests,4
 417,Motor Vehicle,Community,Voter Registration,,,,Register residents to vote,3
 418,Motor Vehicle,Community,Selective Service Registration,,,,Register applicants for selective military service,2
-419,Museum,Community,Accreditation & Affiliations,,,,Monitor and maintain accreditation  affiliations  and memberships,2
-420,Museum,Community,Digitization,,,,Coordinates digitization of museum collections  artifacts  including photographs  artifacts  and other assets according to professional standards,2
-421,Museum,Community,Education & Interpretation,,,,Educating museum visitors through accurate interpretation of events and activities of the past,4
+419,Museum,Community,Accreditation & Affiliations,museum accreditation,museum affiliation,,Monitor and maintain accreditation  affiliations  and memberships,2
+420,Museum,Community,Digitization,digitization,,,Coordinates digitization of museum collections  artifacts  including photographs  artifacts  and other assets according to professional standards,2
+421,Museum,Community,Education & Interpretation,interpretation,museum education,educating visitors,Educating museum visitors through accurate interpretation of events and activities of the past,4
 422,Museum,Community,Special Events,,,,Organize and manage special events,2
-423,Museum,Community,Exhibit Programing,exhibit,museum programming,museum exhibits,Programming related to temporary museum exhibits intended to expand educational content,9
+423,Museum,Community,Exhibit Programing,museum exhibit,museum programming,,Programming related to temporary museum exhibits intended to expand educational content,9
 424,Museum,Community,Facility Rentals,,,,Schedule and facilitate meeting space during established rental hours   Arrange for room set up  clean up  and reset,3
 425,Museum,Community,Lectures,,,,Community programs offered on a variety of topics,2
-426,Museum,Community,Marketing,,,,Marketing museum and associated programs to the larger community,2
-427,Museum,Community,Museum Collections,,,,Acquire historic artifacts for museum collections according to professional standards,3
-428,Museum,Community,Museum Store,,,,Order merchandise and merchandising aids  Track inventory and sales,4
+426,Museum,Community,Marketing,museum marketing,,,Marketing museum and associated programs to the larger community,2
+427,Museum,Community,Museum Collections,museum collection,,,Acquire historic artifacts for museum collections according to professional standards,3
+428,Museum,Community,Museum Store,museum store,museum merchandise,,Order merchandise and merchandising aids  Track inventory and sales,4
 429,Museum,Community,Museum Theatre Program,,,,The use of theater to educate the public about important historical events,1
 430,Museum,Community,Outreach,,,,Presentations to off site groups or organizations on topics related to current museum exhibits,3
 431,Museum,Community,Research Center,,,,Research requests from the public according to professional standards,2
@@ -441,25 +441,25 @@ RX_ProgID,ItemMeta1,ServiceType,ProgName,key1,key2,key3,ProgDescription,ProgCoun
 440,Open Space,Community,Land Acquisition,,,,Acquisitions for park and trail development,3
 441,Open Space,Community,Open  Space  and Trail Planning,,,,Open  space  and trail planning,3
 442,Open Space,Community,Open  Space  Maintenance,,,,Trash removal and fence repair,3
-443,Parking,Community,Parking Meter Repair & Maintenance,,,,Repairs and routine maintenance of parking meters,2
-444,Parking,Community,Parking Meter Reading,,,,Revenue collection from  meters  and  parking  pay stations,2
-445,Parking,Community,Metered  Parking,,,,Operate and maintain  parking  meters,2
-446,Parking,Community,Parking Tickets,,,,Distribute parking tickets for violations,3
+443,Parking,Community,Parking Meter Repair & Maintenance,parking meter repair,parking meter maintenance,,Repairs and routine maintenance of parking meters,2
+444,Parking,Community,Parking Meter Reading,parking meter collection,,,Revenue collection from  meters  and  parking  pay stations,2
+445,Parking,Community,Metered  Parking,parking meter operation,,,Operate and maintain  parking  meters,2
+446,Parking,Community,Parking Tickets,parking ticket,,,Distribute parking tickets for violations,3
 447,Parks,Community,Customer Inquiries and Assistance,,,,Provide customer service via phone  email  and in person,2
 448,Parks,Community,Marketing and Promotion,,,,Promote parks and recreation programs and services  including preparing program brochure and monthly flyers for schools community,5
 449,Parks,Community,Program Registration,,,,Registration into Parks and Recreation  P&R  programs,1
-450,Parks,Community,Adult Swim Lessons,,,,Adult learn to swim program,5
-451,Parks,Community,Children Swim Lessons,,,,Children learn to swim program,6
-452,Parks,Community,Aquatic Facility Rentals,,,,Rental of party rooms and activity pool,5
-453,Parks,Community,Lifeguards,,,,Provide lifeguards for patron safety,2
-454,Parks,Community,Recreation Swimming,,,,Recreation swim for all ages,3
+450,Parks,Community,Adult Swim Lessons,adult swim lessons,,,Adult learn to swim program,5
+451,Parks,Community,Children Swim Lessons,children swim lessons,youth swim lessons,,Children learn to swim program,6
+452,Parks,Community,Aquatic Facility Rentals,aquatic facility rentals,pool rentals,,Rental of party rooms and activity pool,5
+453,Parks,Community,Lifeguards,lifeguards,,,Provide lifeguards for patron safety,2
+454,Parks,Community,Recreation Swimming,recreation swimming,,,Recreation swim for all ages,3
 455,Parks,Community,Community Beautification Programs,,,,Tree plantings  seedling giveaways  and landscape projects,2
 456,Parks,Community,Pool Chemical Management,,,,PH and chemical balancing of the pool,3
 457,Parks,Community,Athletic Field Preparation and Maintenance,athletic field maintenance,field preparation,,Pre practice and pre game mowing  striping  and placement of portable mounds and goals   Regular maintenance of the fields,12
 458,Parks,Community,Path and Trail Maintenance,,,,Path and trail maintenance including parking lot  trailhead and sign maintenance  and removal of deadwood,4
 459,Parks,Community,Community Service Worker Management,,,,Transportation and supervision of court appointed community service workers,1
-460,Parks,Community,Dog Park Maintenance,,,,Clean and maintain dog parks,3
-461,Parks,Community,Fencing Installation and Maintenance,,,,Install new  and maintain existing fencing at all parks and recreation centers,2
+460,Parks,Community,Dog Park Maintenance,dog park,,,Clean and maintain dog parks,3
+461,Parks,Community,Fencing Installation and Maintenance,fence installation,fence maintenance,,Install new  and maintain existing fencing at all parks and recreation centers,2
 462,Parks,Community,Graffiti Removal and  Vandalism Control and Repair,,,,Removal of graffiti and repair and replacement of park surfaces  features and equipment,2
 463,Parks,Community,Ice and Snow Removal,,,,Mechanical and chemical removal of ice and snow at parks  concrete sidewalks  and entryways of city buildings,2
 464,Parks,Community,Parades and Special Event Support,,,,Provide staff  equipment  and other resources  set up tents and mark facility booth layouts  for special events and parades throughout the year,8
@@ -470,58 +470,58 @@ RX_ProgID,ItemMeta1,ServiceType,ProgName,key1,key2,key3,ProgDescription,ProgCoun
 469,Parks,Community,Park Tree and Shrub Planting and Maintenance,tree planting,shrub maintenance,forestry,Plant new  and replace dead trees in parks and at some city buildings  Seasonal trimming  fertilization  and pest control of trees and shrubs in all parks,12
 470,Parks,Community,Turf Management and Mowing,turf management,turf mowing,mowing,Manage turf in parks  including fertilization  aeration  pest control  reseeding and sod placement,12
 471,Parks,Community,Park Weed Control,,,,Eliminate existing weeds  and prevent growth of new weeds at parks and city buildings and facilities,2
-472,Parks,Community,Playground Safety,,,,Weekly inspections  third party audits  and small broken part replacement of playground equipment,2
+472,Parks,Community,Playground Safety,playground safety,,,Weekly inspections  third party audits  and small broken part replacement of playground equipment,2
 473,Parks,Community,Youth Sports Programs,youth sports,youth sports programs,,Introduces and teaches children about a variety of sports including gymnastics  flag football  martial arts  tennis and basketball,9
-474,Parks,Community,Adult Sports and Fitness Programs,,,,Provide adult sports and fitness programs,8
-475,Parks,Community,Athletic Field Rentals,,,,Rent softball  baseball  and grass fields to various sports leagues for sports and games,6
-476,Parks,Community,Community Center Rentals,,,,Community centers for citizens to rent,6
+474,Parks,Community,Adult Sports and Fitness Programs,adult sports,adult fitness,,Provide adult sports and fitness programs,8
+475,Parks,Community,Athletic Field Rentals,athletic field rental,,,Rent softball  baseball  and grass fields to various sports leagues for sports and games,6
+476,Parks,Community,Community Center Rentals,community center rental,,,Community centers for citizens to rent,6
 477,Parks,Community,Youth Camps,,,,Provide all day camp programs for youth,2
-478,Parks,Community,Park Rentals,,,,Parks for citizens to rent,4
+478,Parks,Community,Park Rentals,park rental,,,Parks for citizens to rent,4
 479,Parks,Community,Youth Education Programs,,,,Provide youth life long educational programs,3
 480,Parks,Community,Family Recreation Programs,,,,Provide structured programs that allow parents and children to recreate together,1
 481,Police OR Sheriff,Community,Records Management,,,,Crime data records management system available to internal and external customers,6
 482,Police OR Sheriff,Community,Crossing Guards,crossing guards,,,Help children safely cross the street at key locations during the school year,10
-483,Police OR Sheriff,Community,Prisoner Escorts,,,,Process and transport offenders  taken into custody by the court,3
+483,Police OR Sheriff,Community,Prisoner Escorts,prisoner escorts,,,Process and transport offenders  taken into custody by the court,3
 484,Police OR Sheriff,Community,Calls for Service   Emergency Response,calls for service,emergency response,,Answer calls for events that involve an immediate threat to a person or property,10
-485,Police OR Sheriff,Community,Calls for Service   Non Emergency Response,,,,Answer calls for events that may cause apprehension or fear  but no immediate harm or risk to safety is perceived,6
+485,Police OR Sheriff,Community,Calls for Service   Non Emergency Response,non emegercy call for service,,,Answer calls for events that may cause apprehension or fear  but no immediate harm or risk to safety is perceived,6
 486,Police OR Sheriff,Community,Community Problem Solving,multi agency problem solving,community problems solving,,Use a multi agency approach to community problem solving by partnering with the community  government and non government agencies,9
-487,Police OR Sheriff,Community,Crime Analysis,,,,Utilization of various databases and mapping tools to provide timely visual information on developing crime trends,8
+487,Police OR Sheriff,Community,Crime Analysis,crime analysis,crime analytics,,Utilization of various databases and mapping tools to provide timely visual information on developing crime trends,8
 488,Police OR Sheriff,Community,Emergency Response Team,,,,Team approach response to civil disorder  crowd control  major criminal events  natural and man made disasters,4
 489,Police OR Sheriff,Community,Evidence and Property Management,evidence management,property management,cash management,Submit  report  and manage evidence and property,12
-490,Police OR Sheriff,Community,Gang Enforcement Team,,,,Identify and document gang members and their activities and crimes,3
-491,Police OR Sheriff,Community,Narcotics Investigations,,,,Identify drug trafficking  sales and manufacturing,5
+490,Police OR Sheriff,Community,Gang Enforcement Team,gang enforcement,gang investigation,,Identify and document gang members and their activities and crimes,3
+491,Police OR Sheriff,Community,Narcotics Investigations,narcotics investigation,drug trafficking,,Identify drug trafficking  sales and manufacturing,5
 492,Police OR Sheriff,Community,Preventative Patrol,patrol,,,Attempt to eliminate opportunity for misconduct through police presence in areas of expected crime,10
-493,Police OR Sheriff,Community,Property Crimes Investigations,,,,White collar  general theft  burglary  and property damage investigation,8
-494,Police OR Sheriff,Community,Computer Forensic Crime Lab,,,,Investigate crimes where a computer  or other technology  was utilized to commit the crime,7
+493,Police OR Sheriff,Community,Property Crimes Investigations,property crime,white collar crime,,White collar  general theft  burglary  and property damage investigation,8
+494,Police OR Sheriff,Community,Computer Forensic Crime Lab,computer forensic,technology crime lab,,Investigate crimes where a computer  or other technology  was utilized to commit the crime,7
 495,Police OR Sheriff,Community,Special Victims Unit   Crimes Against Children,special victims,crimes against children,crimes against kids,Investigative and support services in the area of crimes against special victims,10
 496,Police OR Sheriff,Community,Special Weapons and Tactics  SWAT,swat,special weapons,,A specialized team utilized in emergency situations beyond standard patrol s capabilities to reach a peaceful resolution,14
 497,Police OR Sheriff,Community,Traffic Ordinance Enforcement and Crash Investigations,crash investigations,traffic crashes,traffic enforcement,Investigate traffic crashes and enforce municipal ordinances and state statutes for on and off highway violations,11
-498,Police OR Sheriff,Community,Violent Crimes Investigations,,,,Respond to serious violent crimes,4
+498,Police OR Sheriff,Community,Violent Crimes Investigations,violent crime,serious crime,,Respond to serious violent crimes,4
 499,Police OR Sheriff,Community,K9 Team,K9 unit,canine unit,police dog,Officers paired with trained police dogs for patrol purposes,10
-500,Police OR Sheriff,Community,Professional Standards,,,,Internal unit assigned to investigate standard operating procedure violations,7
+500,Police OR Sheriff,Community,Professional Standards,professional standards,internal review,,Internal unit assigned to investigate standard operating procedure violations,7
 501,Police OR Sheriff,Community,School Resource Officers  SRO,school resource officers,SRO,,Specialized officers assigned to schools to deal with issues involving students,11
-502,Police OR Sheriff,Community,911 Communications   Emergency Dispatch,,,,Dispatch all public safety emergency calls for service,7
-503,Police OR Sheriff,Community,911 Communications   Call Taking,,,,Answer all public safety emergency calls for service,5
-504,Police OR Sheriff,Community,911 Communications   Non Emergency Calls,,,,Answer and dispatch all public safety non emergency related calls for service,5
-505,Police OR Sheriff,Community,Honor Guard Program,,,,Perform ceremonial events that require the United States flag  as well as funerals and services,5
-506,Police OR Sheriff,Community,Quartermaster Program,,,,Secure  order  and assign department property,4
-507,Police OR Sheriff,Community,Reserve Officer Program,,,,Certified officers and reserve trained officers who volunteer their time to augment the department in logistic  technical  and patrol functions,3
-508,Police OR Sheriff,Community,Truancy Program,,,,Locate juveniles not attending classes during the school year,2
+502,Police OR Sheriff,Community,911 Communications   Emergency Dispatch,emergency dispatch,911 dispatch,,Dispatch all public safety emergency calls for service,7
+503,Police OR Sheriff,Community,911 Communications   Call Taking,911 call,,,Answer all public safety emergency calls for service,5
+504,Police OR Sheriff,Community,911 Communications   Non Emergency Calls,911 non emergency,,,Answer and dispatch all public safety non emergency related calls for service,5
+505,Police OR Sheriff,Community,Honor Guard Program,honor guard,,,Perform ceremonial events that require the United States flag  as well as funerals and services,5
+506,Police OR Sheriff,Community,Quartermaster Program,quartermaster,,,Secure  order  and assign department property,4
+507,Police OR Sheriff,Community,Reserve Officer Program,reserve officer,,,Certified officers and reserve trained officers who volunteer their time to augment the department in logistic  technical  and patrol functions,3
+508,Police OR Sheriff,Community,Truancy Program,truancy,,,Locate juveniles not attending classes during the school year,2
 509,Police OR Sheriff,Community,Walk in Reports,,,,Assist citizens in filing criminal incident and crash reports that may be delayed or minor in nature,6
 510,Police OR Sheriff,Community,Training,police training,emergency officer training,,Training and maintenance of certifications,13
-511,Police OR Sheriff,Community,Cadet Academy,,,,Teach individuals how to become a police officer  including necessary certification skills for commission,5
+511,Police OR Sheriff,Community,Cadet Academy,cadet academy,policy academy,,Teach individuals how to become a police officer  including necessary certification skills for commission,5
 512,Police OR Sheriff,Community,Recruiting,,,,Recruit cadets and laterals,5
 513,Police OR Sheriff,Community,Prisoner Transport and Extradition,,,,Transportation of prisoners to and from court and secure facilities,7
 514,Police OR Sheriff,Community,Carry & Conceal   Gun Permitting,,,,Process applications and complete required background checks to issue or deny permits to purchase and permits to carry,5
 515,Police OR Sheriff,Community,Case Reports,,,,Process and maintain all case reports  and release reports to appropriate agencies,5
-516,Police OR Sheriff,Community,Citizen Ride Along,,,,Citizen ride along program with a patrol deputy,6
+516,Police OR Sheriff,Community,Citizen Ride Along,citizen ride along,,,Citizen ride along program with a patrol deputy,6
 517,Police OR Sheriff,Community,Civil Process Service,,,,Deputies serve civil papers for county courts  public civil processes,4
-518,Police OR Sheriff,Community,Cold Case Investigations,,,,Re evaluates cases of previously unsolved major crimes,4
-519,Police OR Sheriff,Community,Crisis Negotiations,,,,Facilitation of peaceful resolutions to crisis situations,4
+518,Police OR Sheriff,Community,Cold Case Investigations,cold case investigation,unsolved crime,,Re evaluates cases of previously unsolved major crimes,4
+519,Police OR Sheriff,Community,Crisis Negotiations,crisis negotiation,,,Facilitation of peaceful resolutions to crisis situations,4
 520,Police OR Sheriff,Community,Fingerprinting,,,,Start fingerprint process for employment  court orders  adoptions  explosive permits,5
 521,Police OR Sheriff,Community,Mounted Patrol,,,,Perform a variety of public events and duties assigned by the  sheriff on a horse,4
-522,Police OR Sheriff,Community,Offender Registration,,,,Register and data entry for new and existing registered offenders,7
-523,Police OR Sheriff,Community,Warrant Execution,,,,Actively search for wanted individuals,7
+522,Police OR Sheriff,Community,Offender Registration,offender registration,,,Register and data entry for new and existing registered offenders,7
+523,Police OR Sheriff,Community,Warrant Execution,warrant execution,,,Actively search for wanted individuals,7
 524,Public Transit,Community,Transit Service,transit service,bus service,rail service,Transit services within city limits,10
 525,Public Transit,Community,Ticket Sales,,,,Sell ticket and passes at various concession locations,2
 526,Public Transit,Community,Transit  Driver Training and Certification,,,,Initial hire  training  and certification,2
@@ -535,7 +535,7 @@ RX_ProgID,ItemMeta1,ServiceType,ProgName,key1,key2,key3,ProgDescription,ProgCoun
 534,Public Transit,Community,Vehicle Accident Investigation,,,,On scene investigation of all vehicle accidents,2
 535,Public Works,Governance,Building Cosmetics,,,,Repair  Clean  and Paint Interior and exterior Buildings as well as Parking lots,6
 536,Public Works,Governance,Building Electrical Repair Systems,,,,Change Light Tubes  Bulbs  Replace Ballasts  Receptacles  Pumps  etc,4
-537,Public Works,Governance,City Facility Access Control Management,,,,Provide equipment and employee identification badges for access to city facilities,6
+537,Public Works,Governance,City Facility Access Control Management,facility access,,,Provide equipment and employee identification badges for access to city facilities,6
 538,Public Works,Governance,City Facility ADA Building Compliance,,,,Inspect city buildings for Americans with Disabilities  ADA  compliance  making renovations and updates as necessary for compliance,4
 539,Public Works,Governance,City Facility Fire Alarm Inspection and Maintenance,,,,Fire alarm inspection  maintenance  and repairs,4
 540,Public Works,Governance,City Facility Pest Control,,,,Pest control preventative maintenance,5
@@ -546,11 +546,11 @@ RX_ProgID,ItemMeta1,ServiceType,ProgName,key1,key2,key3,ProgDescription,ProgCoun
 545,Public Works,Community,Equipment Repair and Maintenance,equipment repair,equipment maintenance,,Repair and maintenance of specialized equipment,17
 546,Public Works,Community,Crack and Asphalt Repairs,crack repairs,asphalt maintenance,,Repair cracks that don t meet criteria for crack sealing  along with any other asphalt defects,12
 547,Public Works,Community,Crack Sealing Maintenance,crack seal,asphalt seal,,Perform crack sealing on all paved roads,8
-548,Public Works,Community,Curb Maintenance,,,,Paint all identified yellow curbs on medians,2
+548,Public Works,Community,Curb Maintenance,curb maintenance,curb repair,,Paint all identified yellow curbs on medians,2
 549,Public Works,Governance,Custodial Cleaning Services,custodial service,cleaning service,,Clean  sanitize and restock products at city facilities,10
 550,Public Works,Community,Customer Inquiries and Assistance,,,,Provide customer service via phone  email  and in person,7
 551,Public Works,Community,Drainage Master Planning,,,,Manage the development of drainage master plans,2
-552,Public Works,Governance,Elevator Service Log,,,,Provide for time and labor in support for maintenance agreements with various elevator companies,3
+552,Public Works,Governance,Elevator Service Log,elevator service,elevator repair,elevator maintenance,Provide for time and labor in support for maintenance agreements with various elevator companies,3
 553,Public Works,Governance,Emergency Building Repairs,,,,Respond to and repair various emergency non programmed building repairs,2
 554,Public Works,Community,Engineering Design and Construction Standards Development,engineering design,construction standards,,Manage the development of standard details and city specifications,42
 555,Public Works,Community,Geographic Information Systems Application Development and Maintenance,GIS maintenance,Geographic Information Systems,GIS mapping,Develop and maintain Geographic Information Systems  GIS  applications for internal and public use,12
@@ -560,24 +560,24 @@ RX_ProgID,ItemMeta1,ServiceType,ProgName,key1,key2,key3,ProgDescription,ProgCoun
 559,Public Works,Community,Land Acquisition Management,,,,Review land appraisals  property title records  searches  and tax records for land acquisitions,3
 560,Public Works,Community,Line Location Services,,,,Locate of underground utilities,3
 561,Public Works,Community,Map and Graphics Plotting,,,,Maintain hardware for plotting of hard copy maps and other graphics,2
-562,Public Works,Community,Mosquito Control,,,,Mosquito abatement for standing water,8
-563,Public Works,Community,Pavement Assessments,,,,Conduct assessments of road conditions,4
-564,Public Works,Community,Pot Hole Repairs,,,,Repair potholes on all paved roads,3
-565,Public Works,Community,Railway Crossing Maintenance,,,,Railway crossing maintenance roadway and railways crossings align for the safety of vehicular traffic,1
-566,Public Works,Community,School Zone Flasher Maintenance,,,,Conduct routine equipment maintenance  programming  and verification in school zones,3
-567,Public Works,Community,Sidewalk Repair,,,,Repair all damaged sidewalks within the right of way,5
-568,Public Works,Community,Snow Removal,snow removal,removing snow,,Remove snow and ice with plows and salt spreaders,10
-569,Public Works,Community,Street Light Operations and Maintenance,,,,Perform street light maintenance  order needed equipment  and conduct repairs as needed,6
-570,Public Works,Community,Street Markings and Striping,,,,Schedule roadway markings and striping,6
-571,Public Works,Community,Street Sweeping,street sweeping,sweeping street,,Operate street sweeper to remove debris and litter from residential and main arterial roads,10
-572,Public Works,Community,Traffic Data Collection,traffic data collection,traffic data,,Schedule manual traffic counts or automated video counts as needed to perform traffic studies and roadway analysis,9
-573,Public Works,Community,Traffic Engineering Studies,,,,Conduct speed  volume  traffic signal  and stop sign warrant studies as requested,7
+562,Public Works,Community,Mosquito Control,pest control,mosquito control,pest abatement,Mosquito abatement for standing water,8
+563,Public Works,Community,Pavement Assessments,pavement assessment,,,Conduct assessments of road conditions,4
+564,Public Works,Community,Pot Hole Repairs,pot hole repair,pot hole maintenance,,Repair potholes on all paved roads,3
+565,Public Works,Community,Railway Crossing Maintenance,railway crossing,,,Railway crossing maintenance roadway and railways crossings align for the safety of vehicular traffic,1
+566,Public Works,Community,School Zone Flasher Maintenance,school zone,,,Conduct routine equipment maintenance  programming  and verification in school zones,3
+567,Public Works,Community,Sidewalk Repair,sidewalk repair,sidewalk maintenace,,Repair all damaged sidewalks within the right of way,5
+568,Public Works,Community,Snow Removal,snow removal,remove snow,,Remove snow and ice with plows and salt spreaders,10
+569,Public Works,Community,Street Light Operations and Maintenance,street light operations,street light maintenance,,Perform street light maintenance  order needed equipment  and conduct repairs as needed,6
+570,Public Works,Community,Street Markings and Striping,street marking,street striping,street lines,Schedule roadway markings and striping,6
+571,Public Works,Community,Street Sweeping,street sweeping,sweep streets,,Operate street sweeper to remove debris and litter from residential and main arterial roads,10
+572,Public Works,Community,Traffic Data Collection,traffic data collection,traffic counts,,Schedule manual traffic counts or automated video counts as needed to perform traffic studies and roadway analysis,9
+573,Public Works,Community,Traffic Engineering Studies,traffic engineering,traffic studies,,Conduct speed  volume  traffic signal  and stop sign warrant studies as requested,7
 574,Public Works,Community,Traffic Monitoring,traffic monitoring,monitor traffic,traffic control,Utilize traffic system detection to monitor traffic flows on arterials,11
-575,Public Works,Community,Traffic Sign Management  Installation and Maintenance,,,,Schedule work orders for missing  damaged  and non compliant signing  Conduct routine maintenance  and perform blanket neighborhood sign upgrades,8
-576,Public Works,Community,Traffic Signal Emergency Vehicle Pre Emption Maintenance,,,,Repair and replace equipment as needed  and update priority coding at signal locations,2
-577,Public Works,Community,Traffic Signal Timing,,,,Perform corridor analysis for traffic signal timing updates  Conduct routine timing adjustments,6
-578,Public Works,Community,Weed and Litter Maintenance,,,,Remove weeds and litter from landscaped medians and right of ways,6
-579,Public Works,Community,Work Zone Traffic Control,,,,Implement traffic control plans for traffic crew maintenance operations  Review and adjust plans as traffic conditions dictate,4
+575,Public Works,Community,Traffic Sign Management  Installation and Maintenance,traffic sign ,,,Schedule work orders for missing  damaged  and non compliant signing  Conduct routine maintenance  and perform blanket neighborhood sign upgrades,8
+576,Public Works,Community,Traffic Signal Emergency Vehicle Pre Emption Maintenance,traffic signal maintenance,traiffic signal repair,,Repair and replace equipment as needed  and update priority coding at signal locations,2
+577,Public Works,Community,Traffic Signal Timing,traffic signal timing,,,Perform corridor analysis for traffic signal timing updates  Conduct routine timing adjustments,6
+578,Public Works,Community,Weed and Litter Maintenance,weed removal,litter removal,median maintenance,Remove weeds and litter from landscaped medians and right of ways,6
+579,Public Works,Community,Work Zone Traffic Control,work zone traffic control,,,Implement traffic control plans for traffic crew maintenance operations  Review and adjust plans as traffic conditions dictate,4
 580,Senior Services,Community,Education  Arts and Cultural Activity Trips,,,,Transportation and admission to plays  museums  and other arts and cultural activities,3
 581,Senior Services,Community,Exercise Classes,,,,Provide exercise classes,2
 582,Senior Services,Community,Senior Health Services,,,,Provide Flu shots  blood pressure screening and hearing checks,2
