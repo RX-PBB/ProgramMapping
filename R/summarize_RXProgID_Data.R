@@ -57,14 +57,24 @@ summarize_RXProgID_Data<-function(RXProgID,DatabaseNames=NULL){
 
        statement<-paste("SELECT * FROM CostModelInfo;",sep='')
        CostModelInfo<-dbGetQuery(con,statement)
+       
+       statement<-paste("SELECT * FROM ProgBudgetInfo;",sep='')
+       ProgBudgetInfo<-dbGetQuery(con,statement)
+      
+       statement<-paste("SELECT * FROM PBBComments;",sep='') 
+       PBBComments<-dbGetQuery(con,statement)
 
        CostModelID<-CostModelInfo[CostModelInfo$CostModelName=="PBB",]
 
        #Calculate Program Cost
        if (nrow(ProgInfo)>0){
 
+         
          for(j in 1:nrow(ProgInfo)){
            #print(j)
+           # if(i==11){
+           #   if(j==12)(browser())
+           # }
            ProgID<-ProgInfo[j,'ProgID']
            rxprogid<-ProgInfo[j,'RX_ProgID']
 
@@ -100,7 +110,15 @@ summarize_RXProgID_Data<-function(RXProgID,DatabaseNames=NULL){
              Revenue<-sum(BudgetItemInfo[BudgetItemInfo$AcctType=='Revenue','ProgCost'],na.rm = T)
 
              BudgetOrgInfo<-OrgInfo[OrgInfo$DatabaseName==DatabaseNames[i],]
-
+             
+             ProgBudgetNote<-ProgBudgetInfo[ProgBudgetInfo$BudgetID==BudgetID & ProgBudgetInfo$ProgID==ProgInfo[j,'ProgID'],'ProgBudgetNote']
+             PBBCommentID<-ProgBudgetInfo[ProgBudgetInfo$BudgetID==BudgetID & ProgBudgetInfo$ProgID==ProgInfo[j,'ProgID'],'PBBCommentID']
+             
+             PBBComment<-PBBComments[PBBComments$PBBCommentID==PBBCommentID,'PBBComment']
+             
+             if(length(ProgBudgetNote)==0)(ProgBudgetNote<-NA)
+             if(length(PBBComment)==0)(PBBComment<-NA)
+             
              row<-data.frame(RX_ProgID=rxprogid,
                              ProgID=ProgInfo[j,'ProgID'],
                              RX_ProgName=RX_ProgInfo[RX_ProgInfo$RX_ProgID==rxprogid,"ProgName"],
@@ -109,6 +127,8 @@ summarize_RXProgID_Data<-function(RXProgID,DatabaseNames=NULL){
                              FTE=FTE,
                              ProgName=ProgInfo[j,'ProgName'],
                              ProgDescription=ProgInfo[j,'ProgDescription'],
+                             PBBComment=PBBComment,
+                             BudgetNote=ProgBudgetNote,
                              Personnel=Personnel,
                              NonPersonnel=NonPersonnel,
                              Revenue=Revenue,
