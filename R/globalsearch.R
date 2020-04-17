@@ -10,19 +10,19 @@
 #' @examples
 #' data<-globalsearch(RXProgID=NULL,DatabaseNames=NULL,keyword='Fireworks')
 
-globalsearch<-function(RXProgID,OrgProgID=NULL,DatabaseNames=NULL,keyword=NULL,excludeZeroCost=T){
+globalsearch<-function(RXProgID,OrgProgID=NULL,DatabaseNames=NULL,keyword=NULL,excludeZeroCost=T,db.settings){
 
-    db_host<-'ec2-52-11-250-69.us-west-2.compute.amazonaws.com'
-    db_name<-'RX_Admin'
+   
     data<-NULL
 
     #Even if we are not pulling by RX_ProgIDs get this info
     
         con <- dbConnect(MySQL(),
-                           user="mtseman",
-                           password="cree1234",
-                           host=db_host,
-                           dbname=db_name)
+                           user=db.settings$user,
+                           password=db.settings$pw,
+                           host=db.settings$host,
+                           dbname=db.settings$db_admin)
+
 
            statement<-paste("SELECT * FROM OrgInfo;",sep='')
            OrgInfo<-dbGetQuery(con,statement)
@@ -53,9 +53,9 @@ globalsearch<-function(RXProgID,OrgProgID=NULL,DatabaseNames=NULL,keyword=NULL,e
       #print(DatabaseNames[i])
       #Get ProgInfo for
       con <- dbConnect(MySQL(),
-                       user="mtseman",
-                       password="cree1234",
-                       host=db_host,
+                       user=db.settings$user,
+                       password=db.settings$pw,
+                       host=db.settings$host,
                        dbname=DatabaseNames[i])
 
       #Do it this way if we are referencing the master list
