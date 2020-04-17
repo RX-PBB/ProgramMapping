@@ -4,9 +4,9 @@ library(reshape2)
 library(devtools)
 
 #Our custom Libraries:
-install_github('RX-PBB/PBBMikesGeneral',force=T)
+#install_github('RX-PBB/PBBMikesGeneral',force=T)
 library(PBBMikesGeneral)
-install_github('RX-PBB/ProgramMapping')
+#install_github('RX-PBB/ProgramMapping')
 library(ProgramMapping)
 
 
@@ -55,11 +55,21 @@ data<-RX_PrgID_data<-summarize_RXProgID_Data(RXProgID=c(67,208,209),DatabaseName
 data<-RX_PrgID_data<-summarize_RXProgID_Data(RXProgID=NULL,DatabaseNames=NULL)
 write.csv(data,'data.csv',row.names = F)
 
+col_order<-colnames(data)
+
+ServiceImpacts<-read.csv('RX_ProgID_ServiceImpact.csv',header=T)
+
+temp<-merge(data,ServiceImpacts[c('RX_ProgID','Service','Impact')],by='RX_ProgID')
+nrow(temp)
+
+temp<-temp[c('Service','Impact',col_order)]
+write.csv(temp,'ServiceImpact_ALL.csv',row.names = F)
+
 #Loop over supplied keywords associated with the master programs and generate a summary
 
 keyfile<-read.csv('keywords.csv',header=T,colClasses = 'character')
-
-#keyfile<-keyfile[1:26,]
+keyfile<-keyfile[keyfile$key1!="",]
+keyfile<-keyfile[301:365,]
 
 start.time<-Sys.time()
 temp<-NULL
@@ -82,6 +92,14 @@ print(paste0(i,"  ",nrow(temp)))
 
 stop.time<-Sys.time()
 stop.time-start.time
+
+temp<-NULL
+for (i in 1:9){
+  
+ df<-read.csv(paste0('keyword_search_results',i,'.csv'),header=T)
+ temp<-rbind(temp,df)
+}
+
 
 write.csv(temp,'keyword_search_results.csv')
 keyword_search<-function(key){

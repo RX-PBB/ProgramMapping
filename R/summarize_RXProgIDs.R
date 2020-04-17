@@ -41,7 +41,9 @@ summarize_RXProgIDs<-function(DatabaseNames=NULL){
     ProgInfo_Master<-NULL
 
     for (i in 1:length(DatabaseNames)){
-
+      
+      print(paste0(DatabaseNames[i],": ",OrgInfo[OrgInfo$DatabaseName==DatabaseNames[i],'OrgName']))
+      
       con <- dbConnect(MySQL(),
                        user="mtseman",
                        password="cree1234",
@@ -66,9 +68,10 @@ summarize_RXProgIDs<-function(DatabaseNames=NULL){
                        Programs_Mapped_Unique=Programs_Mapped_Unique)
 
        temp<-rbind(temp,row)
-
+       
+       if (ncol(ProgInfo)==26){
        ProgInfo_Master<-rbind(ProgInfo_Master,ProgInfo)
-       print(paste0(DatabaseNames[i],": ",OrgInfo[OrgInfo$DatabaseName==DatabaseNames[i],'OrgName']))
+       }
 
 
 
