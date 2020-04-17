@@ -6,6 +6,7 @@
 #' @param DatabaseNames names of the PBB databases to summarrize, set to NULL for all databases. Will exclude test databases
 #' @param keyword keyword to search program names and descriptions for
 #' @param excludeZeroCost Should we exclude progrms that are zero cost.
+#' @param db.settings Database user, host, pw
 #' @export
 #' @examples
 #' data<-globalsearch(RXProgID=NULL,DatabaseNames=NULL,keyword='Fireworks')
