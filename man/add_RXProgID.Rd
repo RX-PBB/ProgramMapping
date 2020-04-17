@@ -4,7 +4,8 @@
 \alias{add_RXProgID}
 \title{add_RXProgID}
 \usage{
-add_RXProgID(ItemMeta1, ServiceType, ProgName, ProgDescription)
+add_RXProgID(ItemMeta1, ServiceType, ProgName, ProgDescription,
+  db.settings)
 }
 \arguments{
 \item{ItemMeta1}{User group aka where to file this program under}
@@ -14,6 +15,8 @@ add_RXProgID(ItemMeta1, ServiceType, ProgName, ProgDescription)
 \item{ProgName}{The program name}
 
 \item{ProgDescription}{The Program description}
+
+\item{db.settings}{Database user, host, pw}
 }
 \description{
 Add a program to the RX_Master lsit

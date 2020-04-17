@@ -2,6 +2,7 @@
 #'
 #' Creates two summary dataframes. One is a summary by Program - how often each program is used The second a sumary by Org - how many mapped programs per org.
 #' @param DatabaseNames names of the PBB databases to summarrize, set to NULL for all databases. Will exclude test databases
+#' @param db.settings Database user, host, pw
 #' @export
 #' @examples
 #' data<-summarize_RXProgIDs(DatabaseNames)
@@ -10,16 +11,15 @@
 
 
 
-summarize_RXProgIDs<-function(DatabaseNames=NULL){
+summarize_RXProgIDs<-function(DatabaseNames=NULL,db.settings){
 
-    db_host<-'ec2-52-11-250-69.us-west-2.compute.amazonaws.com'
-    db_name<-'RX_Admin'
+    
 
     con <- dbConnect(MySQL(),
-                       user="mtseman",
-                       password="cree1234",
-                       host=db_host,
-                       dbname=db_name)
+                      user=db.settings$user,
+                           password=db.settings$pw,
+                           host=db.settings$host,
+                           dbname=db.settings$db_admin)
 
        statement<-paste("SELECT * FROM OrgInfo;",sep='')
        OrgInfo<-dbGetQuery(con,statement)
@@ -45,9 +45,9 @@ summarize_RXProgIDs<-function(DatabaseNames=NULL){
       print(paste0(DatabaseNames[i],": ",OrgInfo[OrgInfo$DatabaseName==DatabaseNames[i],'OrgName']))
       
       con <- dbConnect(MySQL(),
-                       user="mtseman",
-                       password="cree1234",
-                       host=db_host,
+                       user=db.settings$user,
+                       password=db.settings$pw,
+                       host=db.settings$host,
                        dbname=DatabaseNames[i])
 
        statement<-paste("SELECT * FROM ProgInfo;",sep='')

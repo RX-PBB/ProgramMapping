@@ -14,17 +14,16 @@
 
 
 
-edit_RXProgID<-function(RX_ProgID,	ItemMeta1=NULL,	ServiceType=NULL,	ProgName=NULL,	ProgDescription=NULL){
+edit_RXProgID<-function(RX_ProgID,	ItemMeta1=NULL,	ServiceType=NULL,	ProgName=NULL,	ProgDescription=NULL,db.settings){
 
     if(!is.null(RX_ProgID)){
-        db_host<-'ec2-52-11-250-69.us-west-2.compute.amazonaws.com'
-        db_name<-'RX_Admin'
+       
 
         con <- dbConnect(MySQL(),
-                           user="mtseman",
-                           password="cree1234",
-                           host=db_host,
-                           dbname=db_name)
+                          user=db.settings$user,
+                           password=db.settings$pw,
+                           host=db.settings$host,
+                           dbname=db.settings$db_admin)
 
 
 

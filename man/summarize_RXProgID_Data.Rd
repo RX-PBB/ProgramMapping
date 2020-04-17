@@ -4,12 +4,14 @@
 \alias{summarize_RXProgID_Data}
 \title{summarize_RXProgID_Data}
 \usage{
-summarize_RXProgID_Data(RXProgID, DatabaseNames = NULL)
+summarize_RXProgID_Data(RXProgID, DatabaseNames = NULL, db.settings)
 }
 \arguments{
 \item{RXProgID}{names of the PBB databases to summarrize, set to NULL for all databases. Will exclude test databases}
 
 \item{DatabaseNames}{names of the PBB databases to summarrize, set to NULL for all databases. Will exclude test databases}
+
+\item{db.settings}{Database user, host, pw}
 }
 \description{
 Returns a table of Orgs that offer the RX_ProgID. Includes Cost and breakout by Org budget and year.

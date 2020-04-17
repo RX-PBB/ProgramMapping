@@ -5,7 +5,7 @@
 \title{edit_RXProgID}
 \usage{
 edit_RXProgID(RX_ProgID, ItemMeta1 = NULL, ServiceType = NULL,
-  ProgName = NULL, ProgDescription = NULL)
+  ProgName = NULL, ProgDescription = NULL, db.settings)
 }
 \arguments{
 \item{RX_ProgID}{The ID of the program to update}

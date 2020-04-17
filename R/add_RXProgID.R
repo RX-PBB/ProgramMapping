@@ -5,6 +5,7 @@
 #' @param ServiceType Typically Community or Governance.
 #' @param ProgName The program name
 #' @param ProgDescription The Program description
+#' @param db.settings Database user, host, pw
 #' @export
 #' @examples
 #' edit_RXProgID(RX_ProgID=1,ProgName='Updated ProgName')
@@ -13,7 +14,7 @@
 
 
 
-add_RXProgID<-function(ItemMeta1,	ServiceType,	ProgName,	ProgDescription){
+add_RXProgID<-function(ItemMeta1,	ServiceType,	ProgName,	ProgDescription,db.settings){
 
 
     row<-data.frame(ItemMeta1=ItemMeta1,
@@ -24,14 +25,11 @@ add_RXProgID<-function(ItemMeta1,	ServiceType,	ProgName,	ProgDescription){
     row<-db_clean(row)
     updateFields<-colnames(row)
 
-    db_host<-'ec2-52-11-250-69.us-west-2.compute.amazonaws.com'
-    db_name<-'RX_Admin'
-
     con <- dbConnect(MySQL(),
-                           user="mtseman",
-                           password="cree1234",
-                           host=db_host,
-                           dbname=db_name)
+                           user=db.settings$user,
+                           password=db.settings$pw,
+                           host=db.settings$host,
+                           dbname=db.settings$db_admin)
 
 
 

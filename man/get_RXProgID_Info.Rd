@@ -4,7 +4,7 @@
 \alias{get_RXProgID_Info}
 \title{get_RXProgID_Info}
 \usage{
-get_RXProgID_Info(RX_ProgID)
+get_RXProgID_Info(RX_ProgID, db.settings)
 }
 \arguments{
 \item{RX_ProgID}{The ID of the program info to get. Set to NULL to pull all programs. Provide a vector of indexes to pull a subset.}

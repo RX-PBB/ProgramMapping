@@ -3,22 +3,22 @@
 #' Returns a table of Orgs that offer the RX_ProgID. Includes Cost and breakout by Org budget and year.
 #' @param RXProgID names of the PBB databases to summarrize, set to NULL for all databases. Will exclude test databases
 #' @param DatabaseNames names of the PBB databases to summarrize, set to NULL for all databases. Will exclude test databases
+#' @param db.settings Database user, host, pw
 #' @export
 #' @examples
 #' data<-summarize_RXProgID_Data(RXProgID=1,DatabaseNames)
 
 
-summarize_RXProgID_Data<-function(RXProgID,DatabaseNames=NULL){
+summarize_RXProgID_Data<-function(RXProgID,DatabaseNames=NULL,db.settings){
 
-    db_host<-'ec2-52-11-250-69.us-west-2.compute.amazonaws.com'
-    db_name<-'RX_Admin'
+   
     data<-NULL
 
     con <- dbConnect(MySQL(),
-                       user="mtseman",
-                       password="cree1234",
-                       host=db_host,
-                       dbname=db_name)
+                       user=db.settings$user,
+                           password=db.settings$pw,
+                           host=db.settings$host,
+                           dbname=db.settings$db_admin)
 
        statement<-paste("SELECT * FROM OrgInfo;",sep='')
        OrgInfo<-dbGetQuery(con,statement)
@@ -44,9 +44,9 @@ summarize_RXProgID_Data<-function(RXProgID,DatabaseNames=NULL){
       #print(DatabaseNames[i])
       #Get ProgInfo for
       con <- dbConnect(MySQL(),
-                       user="mtseman",
-                       password="cree1234",
-                       host=db_host,
+                       user=db.settings$user,
+                           password=db.settings$pw,
+                           host=db.settings$host,
                        dbname=DatabaseNames[i])
 
        statement<-paste("SELECT * FROM ProgInfo WHERE RX_ProgID IN",create_IDstring(RXProgID),";",sep='')
